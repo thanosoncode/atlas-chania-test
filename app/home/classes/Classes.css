@@ -1,0 +1,28 @@
+.grid-container-classes {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-auto-rows: 500px;
+  gap: 60px 32px;
+}
+
+@media (max-width: 853px) {
+  .grid-container-classes {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 500px;
+    gap: 100px 32px;
+  }
+}
+
+@media (max-width: 653px) {
+  .grid-container-classes {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 400px;
+    gap: 40px 32px;
+  }
+}

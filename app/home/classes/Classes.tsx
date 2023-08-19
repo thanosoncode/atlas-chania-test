@@ -1,0 +1,120 @@
+import Image from "next/image";
+import weightlifting from "../../../public/weightlifting.jpg";
+import powerlifting from "../../../public/powerlifting.jpg";
+import opengym from "../../../public/open-gym-1.jpg";
+import crossfit from "../../../public/crossfit-m.jpg";
+import Link from "next/link";
+import "./Classes.css";
+import ShadowHeadingBlack from "@/app/components/shadowHeading/ShadowHeadingBlack";
+
+const Classes = () => {
+  return (
+    <div className="bg-neutral-900 mt-[250px] md:mt-[300px] pb-[120px] flex flex-col items-center">
+      <div className="w-full lg:w-[1200px] mx-auto relative px-4">
+        <div className="top-0 sm:top-10 md:top-32 text-white absolute z-20 flex justify-between inset-0 items-center w-full">
+          <h4 className="text-5xl xl:text-6xl  uppercase text-center font-extrabold lg:whitespace-nowrap px-6">
+            Βρες το άθλημα που σου ταιριάζει
+          </h4>
+        </div>
+        <div className="hidden lg:block w-full h-full">
+          <ShadowHeadingBlack
+            size={200}
+            top="-top-[70px]"
+            left="left-0"
+            title="styles"
+          />
+        </div>
+        <div className="hidden md:block lg:hidden w-full h-full ">
+          <ShadowHeadingBlack
+            size={150}
+            top="-top-[30px]"
+            left="left-0"
+            title="styles"
+          />
+        </div>
+      </div>
+      <div className="pt-[140px] md:pt-[240px] lg:pt-[280px] px-4 ">
+        <div className="grid-container-classes">
+          <Link href="/weightlifting" className="w-full h-full block">
+            <div className="relative w-full  h-[70%] overflow-hidden">
+              <Image
+                src={weightlifting}
+                alt="class-1"
+                className="hover:scale-105 duration-200 object-cover"
+                fill
+                sizes="(min-width: 1320px) 584px, (min-width: 860px) calc(42.27vw + 34px), (min-width: 740px) 670px, calc(95.71vw - 19px)"
+              />
+            </div>
+            <div className="text-neutral-400 mt-4 ">
+              <h3 className="text-3xl text-white font-bold mb-1 md:mb-2 tracking-wide uppercase">
+                Weightlifting
+              </h3>
+              <p className="text-base sm:text-lg  block  font-semibold tracking-wide text-neutral-300 mb-1 md:mb-2">
+                Ο &quot;πατέρας&quot; των αθλημάτων της ισχύος
+              </p>
+            </div>
+          </Link>
+          <Link href="/powerlifting" className="w-full h-full block ">
+            <div className="relative w-full  h-[70%] overflow-hidden">
+              <Image
+                src={powerlifting}
+                alt="class-1"
+                className="hover:scale-105 duration-200 object-cover"
+                fill
+                sizes="(min-width: 1320px) 584px, (min-width: 860px) calc(42.27vw + 34px), (min-width: 740px) 670px, calc(95.71vw - 19px)"
+              />
+            </div>
+            <div className="text-neutral-400 mt-4 ">
+              <h3 className="text-3xl text-white font-bold mb-1 md:mb-2 tracking-wide uppercase">
+                Powerlifting
+              </h3>
+              <p className="text-base sm:text-lg  block  font-semibold tracking-wide text-neutral-300 mb-1 md:mb-2">
+                Μάθε την τέχνη του powerlifting και εκτόξευσε την δύναμή σου
+              </p>
+            </div>
+          </Link>
+          <Link href="/crossfit" className="w-full h-full block">
+            <div className="relative w-full  h-[70%] overflow-hidden">
+              <Image
+                src={crossfit}
+                alt="class-1"
+                className="hover:scale-105 duration-200 object-cover"
+                fill
+                sizes="(min-width: 1320px) 584px, (min-width: 860px) calc(42.27vw + 34px), (min-width: 740px) 670px, calc(95.71vw - 19px)"
+              />
+            </div>
+            <div className="text-neutral-400 mt-4 ">
+              <h3 className="text-3xl text-white uppercase font-bold mb-1 md:mb-2 tracking-wide">
+                Crossfit
+              </h3>
+              <p className="text-base sm:text-lg block  font-semibold tracking-wide text-neutral-300 mb-1 md:mb-2">
+                Γυμνάσε ολοκληρωμένα το σώμα σου και σε σύντομο χρονικό διάστημα
+              </p>
+            </div>
+          </Link>
+          <Link href="/opengym" className="w-full h-full block">
+            <div className="relative w-full  h-[70%] overflow-hidden">
+              <Image
+                src={opengym}
+                alt="class-1"
+                className="hover:scale-105 duration-200 object-cover"
+                fill
+                sizes="(min-width: 1320px) 584px, (min-width: 860px) calc(42.27vw + 34px), (min-width: 740px) 670px, calc(95.71vw - 19px)"
+              />
+            </div>
+            <div className="text-neutral-400 mt-4 ">
+              <h3 className="text-3xl text-white font-bold mb-1 md:mb-2 tracking-wide uppercase">
+                Open gym
+              </h3>
+              <p className="text-base sm:text-lg  block  font-semibold tracking-wide text-neutral-300 mb-1 md:mb-2">
+                Ενισχύστε την προπόνηση σας με μηχανήματα για αύξηση μυικής
+                μάζας και για βελτίωση των main lifts
+              </p>
+            </div>
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+export default Classes;

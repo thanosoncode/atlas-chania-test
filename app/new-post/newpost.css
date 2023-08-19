@@ -1,0 +1,9 @@
+.editor-container .ql-editor {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.ql-container {
+  padding-bottom: 16px;
+  min-height: 500px;
+}

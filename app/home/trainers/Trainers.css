@@ -1,0 +1,18 @@
+.grid-container-trainers {
+  padding-top: 100px;
+  max-width: 1200px;
+  width: 100%;
+  gap: 20px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, minmax(200px, 400px));
+}
+
+@media (max-width: 768px) {
+  .grid-container-trainers {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 40px;
+  }
+}

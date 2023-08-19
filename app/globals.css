@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  ul {
+    @apply list-disc;
+    @apply pl-12;
+    @apply text-lg;
+  }
+  ol {
+    @apply list-decimal;
+    @apply pl-12;
+    @apply text-lg;
+  }
+  li {
+    @apply text-lg;
+  }
+
+  h1 {
+    @apply text-4xl;
+  }
+  h2 {
+    @apply text-3xl;
+  }
+  h4 {
+    @apply text-2xl;
+  }
+
+  p {
+    @apply text-lg;
+  }
+}
