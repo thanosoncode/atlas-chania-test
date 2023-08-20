@@ -9,6 +9,7 @@ const headerVariants = {
 };
 
 const MotionHeader = () => {
+  console.log("some change");
   return (
     <div className="absolute top-36 sm:top-56 md:top-1/4 left-1/2 -translate-x-1/2   z-10  w-[calc(100%-32px)]">
       <div className="text-white text-center flex flex-col gap-8 items-center justify-center">
