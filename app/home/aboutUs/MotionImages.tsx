@@ -18,7 +18,7 @@ const MotionImages = () => {
         className="w-[68%] md:w-1/2 relative h-full"
         initial={{ x: 25, y: 15 }}
         animate={{ x: inView ? 0 : 25, y: inView ? 0 : 15 }}
-        transition={{ duration: 5 }}
+        transition={{ duration: 3 }}
       >
         <Image
           src={incline}
@@ -28,12 +28,12 @@ const MotionImages = () => {
           sizes="(min-width: 1320px) 600px, (min-width: 780px) calc(43.46vw + 35px), calc(68.04vw - 22px)"
         />
       </motion.div>
-      <div className="w-[60%] absolute h-[85%] right-0 top-24 md:top-40">
+      <div className="w-[65%] absolute h-[85%] right-0 top-32 md:top-40">
         <motion.div
           className="w-full h-full relative"
           initial={{ x: -25, y: 15 }}
           animate={{ x: inView ? 0 : -25, y: inView ? 0 : 15 }}
-          transition={{ duration: 5 }}
+          transition={{ duration: 3 }}
         >
           <Image
             src={girl}
