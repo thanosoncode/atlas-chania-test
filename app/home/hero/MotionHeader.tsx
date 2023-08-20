@@ -16,7 +16,7 @@ const MotionHeader = () => {
           variants={headerVariants}
           initial="hidden"
           animate="visible"
-          className="hidden md:flex flex-col gap-4  text-5xl  md:text-6xl xl:text-8xl uppercase font-extrabold"
+          className="hidden md:flex flex-col gap-6  text-5xl  md:text-6xl xl:text-8xl uppercase font-extrabold"
         >
           <span className="whitespace-nowrap">We will teach you</span>
           <span className="whitespace-nowrap">how to lift the world</span>
@@ -37,12 +37,12 @@ const MotionHeader = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
-          className="text-neutral-200 text-base sm:text-xl xl:w-1/2 mx-auto"
+          className="text-neutral-200 text-base font-semibold sm:text-xl xl:w-1/2 mx-auto mt-3"
         >
           Ξεκλείδωσε την δύναμη σου και μεταμόρφωσε το σώμα και το μυαλό σου
         </motion.h4>
 
-        <div className="flex gap-6 md:gap-12 mt-8 w-full justify-center md:flex-row flex-col">
+        <div className="flex gap-6 md:gap-12 mt-10 w-full justify-center md:flex-row flex-col">
           <motion.div
             initial={{ y: 50, opacity: 0, scale: 0 }}
             animate={{ y: 0, opacity: 1, scale: 1 }}
