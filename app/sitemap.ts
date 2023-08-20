@@ -4,14 +4,14 @@ export default async function () {
   const allPosts = await prisma.post.findMany();
 
   const posts = allPosts.map((post) => ({
-    url: `https://atlas-chania.vercel.app/${post.id}`,
+    url: `https://atlaschania.gr/${post.id}`,
     lastModified: new Date().toISOString(),
   }));
 
   const routes = [
     "",
     "about",
-    "john-atlas",
+    "ntagkounakis",
     "crossfit",
     "powerlifting",
     "opengym",
@@ -20,7 +20,7 @@ export default async function () {
     "trainers",
     "contact",
   ].map((route) => ({
-    url: `https://atlas-chania.vercel.app/${route}`,
+    url: `https://atlaschania.gr/${route}`,
     lastModified: new Date().toISOString(),
   }));
 

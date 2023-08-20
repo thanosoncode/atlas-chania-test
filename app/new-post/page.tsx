@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import { MotionWrapper } from "../components/motionWrapper/MotionWrapper";
 import { useSession } from "next-auth/react";
 import { redirect } from "next/navigation";
+import toast from "react-hot-toast";
 
 type UploadedImageData = {
   asset_id: string;
