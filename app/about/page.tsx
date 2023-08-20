@@ -254,7 +254,7 @@ const About = () => {
             <div className="flex gap-3 justify-center items-center">
               <AiOutlineMail size={24} color="#262626" />
               <div className=" font-semibold text-lg  mb-1">
-                email@gmail.com
+                giannisdagou@gmail.com
               </div>
             </div>
             <div className="flex gap-3 justify-center items-start sm:items-center">

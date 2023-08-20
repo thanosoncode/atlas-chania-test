@@ -51,7 +51,7 @@ const Contact = () => {
               <div className="flex flex-col gap-4 mt-8">
                 <div className="flex gap-6">
                   <AiOutlineMail size={24} color="#000" />
-                  <div className="  font-bold mb-1">email@gmail.com</div>
+                  <div className="  font-bold mb-1">giannisdagou@gmail.com</div>
                 </div>
                 <div className="flex gap-6">
                   <BsTelephone size={24} color="#000" />
