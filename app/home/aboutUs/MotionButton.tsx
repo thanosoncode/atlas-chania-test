@@ -20,10 +20,10 @@ const MotionButton = () => {
       transition={{ delay: 0.2, duration: 0.1 }}
     >
       <Link
-        className="bg-black text-white  hover:bg-red-500 hover:text-white duration-200 uppercase w-full mx-auto md:w-min md:px-16 py-5 text-center  whitespace-nowrap font-bold text-lg block"
+        className="border border-white text-white  hover:bg-white hover:text-black duration-200 uppercase w-full mx-auto md:w-min md:px-16 py-5 text-center  whitespace-nowrap font-bold text-lg block"
         href="/contact"
       >
-        Κλεισε δοκιμαστικη προπονηση
+        κλεισε δοκιμαστικη προπονηση
       </Link>
     </motion.div>
   );

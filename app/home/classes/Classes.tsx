@@ -113,6 +113,14 @@ const Classes = () => {
             </div>
           </Link>
         </div>
+        <div className="flex gap-12 mt-16 w-full">
+          <Link
+            className="border border-white text-white  hover:bg-white hover:text-black duration-200 uppercase w-full mx-auto md:w-min md:px-16 py-5 text-center  whitespace-nowrap font-bold text-lg block"
+            href="/contact"
+          >
+            κλεισε δοκιμαστικη προπονηση
+          </Link>
+        </div>
       </div>
     </div>
   );

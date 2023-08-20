@@ -22,14 +22,6 @@ const AboutUs = () => {
             Your Physical Self.
           </div>
         </div>
-        <div className="flex gap-12 mt-16 w-full">
-          <Link
-            className="bg-black text-white  hover:bg-red-500 hover:text-white duration-200 uppercase w-full mx-auto md:w-min md:px-16 py-5 text-center  whitespace-nowrap font-bold text-lg block"
-            href="/contact"
-          >
-            Κλεισε δοκιμαστικη προπονηση
-          </Link>
-        </div>
         <MotionImages />
       </div>
       <div className="bg-neutral-900 absolute w-full  h-[400px] md:h-[500px] lg:h-[600px] -bottom-[320px] -z-20"></div>

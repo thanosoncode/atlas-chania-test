@@ -46,14 +46,14 @@ const SingleTrainer = () => {
                 Γιαννης Νταγκουνακης
               </h1>
 
-              <p className="text-xl md:text-2xl font-bold  mb-6">
+              <p className="text-xl md:text-2xl   mb-6">
                 Πρωταθλητής στην άρση βαρών και στο powerlifting
               </p>
               <div className="flex gap-3 items-center ">
                 <div className="shrink-0">
                   <BsFillTrophyFill size="20px" />
                 </div>
-                <p className="text-base md:text-lg text-neutral-600 mt-2">
+                <p className="text-base md:text-lg text-neutral-600 mt-2 font-bold">
                   Πρωταθλητής στην άρση βαρών με 155 snatch & 190 clean and
                   jerk!
                 </p>
@@ -62,7 +62,7 @@ const SingleTrainer = () => {
                 <div className="shrink-0">
                   <BsFillTrophyFill size="20px" />
                 </div>
-                <p className="text-base md:text-lg text-neutral-600 mt-2">
+                <p className="text-base md:text-lg text-neutral-600 mt-2 font-bold">
                   Πρωταθλητής στο powerlifting &#40;IPF&#41; με άσπαστο ρεκόρ
                   IPF points εδώ και 5 χρόνια!
                 </p>
