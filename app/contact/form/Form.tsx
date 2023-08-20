@@ -2,14 +2,13 @@
 
 import { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
-import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 type FormData = { email: string; message: string };
 
 const Form = () => {
   const form = useRef<HTMLFormElement>(null);
   const [loading, setLoading] = useState(false);
-  const [progressMessage, setProgressMessage] = useState("");
 
   const {
     register,
@@ -19,29 +18,26 @@ const Form = () => {
 
   const sendEmail = async (data: FormData) => {
     setLoading(true);
-    setProgressMessage("Sending..");
-    try {
-      const response = await emailjs.sendForm(
-        "service_wh4c1jj",
-        "template_4x5wobq",
-        form.current ?? "",
-        "user_bm37QJFLQoyKqlOoNcG0e"
-      );
 
-      if (response.text !== "OK") {
+    try {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        body: JSON.stringify(data),
+      });
+      if (!response.ok) {
         setLoading(false);
-        setProgressMessage(response.text);
+        toast.error("Something went wrong, try again later");
         form.current && form.current.reset();
-        throw new Error(response.text);
+        throw new Error("Something went wrong.");
       }
       setLoading(false);
       form.current && form.current.reset();
-      setProgressMessage("Message sent successfully!");
+      toast.success("Το μήνυμα εστάλη!");
       return;
     } catch (error) {
       setLoading(false);
       form.current && form.current.reset();
-      setProgressMessage("Something went wrong. Please try again later");
+      toast.error("Something went wrong, try again later");
       throw new Error("Something went wrong.");
     }
   };
@@ -80,12 +76,11 @@ const Form = () => {
       </div>
       <button
         type="submit"
+        disabled={loading}
         className="bg-black text-white uppercase px-16 py-5 w-full sm:w-min whitespace-nowrap font-bold text-lg hover:bg-red-500 duration-200"
       >
-        Στειλε μηνυμα
+        {loading ? "Loading..." : "Στειλε μηνυμα"}
       </button>
-      <p>{progressMessage}</p>
-      {loading && <p>loading</p>}
     </form>
   );
 };

@@ -28,7 +28,7 @@ const Posts = async () => {
           </div>
         </div>
       </div>
-      <div className="bg-neutral-900 pt-20 sm:pt-40  pb-24 ">
+      <div className="bg-neutral-900 pt-20 sm:pt-48  pb-24 ">
         <div className="px-4">
           <div className="grid-container-classes mx-auto ">
             {sortedPosts.slice(0, 4).map((post) => (

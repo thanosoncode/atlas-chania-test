@@ -5,6 +5,7 @@ import Navbar from "./components/navbar/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import NextAuthProvider from "./components/nextAuthProvider/SessionProvider";
+import ToastProvider from "./components/toastProvider/ToastProvider";
 
 const inter = Inter({ subsets: ["latin", "greek"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
     <html lang="el">
       <body className={inter.className} style={{ overflowX: "hidden" }}>
         <NextAuthProvider>
+          <ToastProvider />
           <div className="absolute z-20 left-1/2 -translate-x-1/2">
             <Navbar />
           </div>
