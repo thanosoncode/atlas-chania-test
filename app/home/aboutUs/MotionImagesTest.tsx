@@ -10,7 +10,7 @@ import { useRef } from "react";
 const MotionImageTest = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const inView = useInView(containerRef, {
-    once: false,
+    once: true,
     margin: "100px 0px 50px 0px",
   });
 
