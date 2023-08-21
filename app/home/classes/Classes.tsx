@@ -9,17 +9,20 @@ import ShadowHeadingBlack from "@/app/components/shadowHeading/ShadowHeadingBlac
 
 const Classes = () => {
   return (
-    <div className="bg-neutral-900 mt-[250px] md:mt-[300px] pb-[120px] flex flex-col items-center">
+    <div className="bg-neutral-900 pb-[120px] flex flex-col items-center">
       <div className="w-full lg:w-[1200px] mx-auto relative px-4">
-        <div className="top-0 sm:top-10 md:top-32 text-white absolute z-20 flex justify-between inset-0 items-center w-full">
-          <h4 className="text-5xl xl:text-6xl  uppercase text-center font-extrabold lg:whitespace-nowrap px-6">
-            Βρες το άθλημα που σου ταιριάζει
+        <div className="top-[100px]   md:top-36 lg:top-52 text-white absolute z-20 flex justify-between inset-0 items-center w-full">
+          <h4 className="block sm:hidden text-5xl xl:text-6xl w-full uppercase text-center font-extrabold lg:whitespace-nowrap px-2 sm:px-6">
+            αθληματα
+          </h4>
+          <h4 className="sm:block hidden text-5xl xl:text-6xl w-full uppercase text-center font-extrabold lg:whitespace-nowrap px-2 sm:px-6">
+            βρες το αθλημα που σου ταιριαζει
           </h4>
         </div>
         <div className="hidden lg:block w-full h-full">
           <ShadowHeadingBlack
             size={200}
-            top="-top-[70px]"
+            top="top-0"
             left="left-0"
             title="styles"
           />
@@ -27,13 +30,13 @@ const Classes = () => {
         <div className="hidden md:block lg:hidden w-full h-full ">
           <ShadowHeadingBlack
             size={150}
-            top="-top-[30px]"
+            top="top-0"
             left="left-0"
             title="styles"
           />
         </div>
       </div>
-      <div className="pt-[140px] md:pt-[240px] lg:pt-[280px] px-4 ">
+      <div className="pt-[160px] md:pt-[240px] lg:pt-[280px] px-4 ">
         <div className="grid-container-classes">
           <Link href="/weightlifting" className="w-full h-full block">
             <div className="relative w-full  h-[70%] overflow-hidden">

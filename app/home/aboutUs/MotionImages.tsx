@@ -2,7 +2,7 @@
 import { useInView, motion } from "framer-motion";
 import Image from "next/image";
 import incline from "../../../public/incline-barbell.jpg";
-import girl from "../../../public/girl.jpg";
+import girl from "../../../public/motion/motion-4.jpg";
 import { useRef } from "react";
 
 const MotionImages = () => {

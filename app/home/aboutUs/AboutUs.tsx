@@ -1,6 +1,7 @@
 import ShadowHeading from "../../components/shadowHeading/ShadowHeading";
 import Link from "next/link";
 import MotionImages from "./MotionImages";
+import MotionImageTest from "./MotionImagesTest";
 
 const AboutUs = () => {
   return (
@@ -22,9 +23,10 @@ const AboutUs = () => {
             Your Physical Self.
           </div>
         </div>
-        <MotionImages />
+        <div className="mt-12 mb-36">
+          <MotionImageTest />
+        </div>
       </div>
-      <div className="bg-neutral-900 absolute w-full  h-[400px] md:h-[500px] lg:h-[600px] -bottom-[320px] -z-20"></div>
     </div>
   );
 };
