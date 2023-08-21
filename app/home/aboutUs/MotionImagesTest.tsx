@@ -26,7 +26,7 @@ const MotionImageTest = () => {
             animate={{ x: inView ? 0 : "100vw" }}
             transition={{ delay: 0.3 + index / 5 }}
           >
-            <Image src={image} alt="incline" />
+            <Image src={image} alt="incline" className="h-full" />
           </motion.div>
         ))}
       </div>

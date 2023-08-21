@@ -23,7 +23,7 @@ const AboutUs = () => {
             Your Physical Self.
           </div>
         </div>
-        <div className="mt-12 mb-36">
+        <div className="mt-12 mb-28">
           <MotionImageTest />
         </div>
       </div>
