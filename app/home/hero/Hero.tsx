@@ -44,21 +44,25 @@ const Hero = () => {
                   <BiTime size="32px" />
                 </div>
                 <div>
-                  <h4 className="uppercase text-lg font-bold tracking-wider mb-3  ">
+                  <h4 className="uppercase text-[17px] sm:text-lg font-bold tracking-wider mb-3  ">
                     Open hours
                   </h4>
                   <div>
                     <div className="font-light mb-1 flex gap-5 justify-between">
-                      <div className="uppercase whitespace-nowrap">
+                      <div className="uppercase whitespace-nowrap sm:text-base text-[15px]">
                         monday - friday
                       </div>
-                      <div className="whitespace-nowrap">8:30AM - 22:30PM</div>
+                      <div className="whitespace-nowrap sm:text-base text-[15px]">
+                        8:30AM - 22:30PM
+                      </div>
                     </div>
                     <div className="font-light mb-1 flex gap-5 justify-between">
-                      <div className="uppercase whitespace-nowrap">
+                      <div className="uppercase whitespace-nowrap sm:text-base text-[15px]">
                         Saturday
                       </div>
-                      <div className="whitespace-nowrap">8:30AM - 18:30PM</div>
+                      <div className="whitespace-nowrap sm:text-base text-[15px]">
+                        8:30AM - 18:30PM
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -71,13 +75,15 @@ const Hero = () => {
                   <MdOutlineLocationOn size="32px" />
                 </div>
                 <div>
-                  <h4 className="uppercase text-lg font-bold tracking-wider mb-3 ">
+                  <h4 className="uppercase text-[17px] sm:text-lg font-bold tracking-wider mb-3 ">
                     Location
                   </h4>
-                  <p className="tracking-wider font-light  mb-1">
+                  <p className="tracking-wider font-light sm:text-base text-[15px]  mb-1">
                     Αγίου Νεκταρίου 31-29
                   </p>
-                  <p className="tracking-wider font-light">Πασακάκι, Χανιά</p>
+                  <p className="tracking-wider font-light sm:text-base text-[15px]">
+                    Πασακάκι, Χανιά
+                  </p>
                 </div>
               </div>
               <div className="flex gap-3 lg:gap-8">
@@ -89,14 +95,16 @@ const Hero = () => {
                 </div>
 
                 <div className="flex flex-col ">
-                  <h4 className="uppercase text-lg font-bold tracking-wider mb-3  ">
+                  <h4 className="uppercase text-[17px] sm:text-lg font-bold tracking-wider mb-3  ">
                     Contact
                   </h4>
                   <div>
-                    <p className="tracking-wider font-light  mb-1">
+                    <p className="tracking-wider sm:text-base text-[15px] font-light  mb-1">
                       giannisdagou@gmail.com
                     </p>
-                    <p className="tracking-wider font-light ">698 739 1659</p>
+                    <p className="tracking-wider sm:text-base text-[15px] font-light ">
+                      698 739 1659
+                    </p>
                   </div>
                 </div>
               </div>

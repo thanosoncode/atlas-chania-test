@@ -41,7 +41,7 @@ const Weightlifting = () => {
         <div className="bg-neutral-900">
           <div className="w-full px-4 xl:w-[1200px] mx-auto pt-12 pb-12 sm:pb-24">
             <h2 className="text-white text-3xl md:text-5xl font-bold uppercase mb-8">
-              σχετικα με το weightlifting
+              Raw Power, Ultimate technique
             </h2>
             <p className="text-neutral-300 text-lg">
               Η πολλή γνωστή σε όλους άρση βαρών, το εθνικό κατά πολλούς άθλημα

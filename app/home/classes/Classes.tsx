@@ -50,7 +50,7 @@ const Classes = () => {
             </div>
             <div className="text-neutral-400 mt-4 ">
               <h3 className="text-3xl text-white font-bold mb-1 md:mb-2 tracking-wide uppercase">
-                Weightlifting
+                Olympic Weightlifting
               </h3>
               <p className="text-base sm:text-lg  block  font-semibold tracking-wide text-neutral-300 mb-1 md:mb-2">
                 Ο &quot;πατέρας&quot; των αθλημάτων της ισχύος

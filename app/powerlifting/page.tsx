@@ -24,7 +24,7 @@ const Powerlifting = () => {
             powerlifting
           </h1>
           <p className="text-lg text-neutral-700 mt-1 sm:mt-3">
-            ειδικά σχεδιασμένη προπόνηση που έχει στόχο την αύξηση της δύναμης
+            Ειδικά σχεδιασμένη προπόνηση που έχει στόχο την αύξηση της δύναμης
           </p>
         </div>
         <div className="relative overflow-y-hidden">
@@ -41,7 +41,8 @@ const Powerlifting = () => {
         <div className="bg-neutral-900">
           <div className="w-full px-4 xl:w-[1200px] mx-auto pt-12 pb-12 sm:pb-24">
             <h2 className="text-white text-3xl md:text-5xl font-bold uppercase mb-8">
-              σχετικα με το powerlifting
+              Everybody wants to be a powerlifter, but don&apos;t nobody wanna
+              lift no heavy ass weight
             </h2>
             <p className="text-neutral-300 text-lg">
               H προπόνηση powerlifting έχει αρχίσει όλο και περισσότερο να
