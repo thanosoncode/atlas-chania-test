@@ -21,12 +21,19 @@ const MotionImageTest = () => {
       <div className="flex gap-2 sm:gap-6 md:gap-12 flex-wrap justify-center px-0 sm:px-2">
         {images.map((image, index) => (
           <motion.div
+            key={index}
             className="w-full sm:w-[45%]"
             initial={{ x: "100vw" }}
             animate={{ x: inView ? 0 : "100vw" }}
             transition={{ delay: 0.3 + index / 5 }}
           >
-            <Image src={image} alt="incline" className="h-full" />
+            <Image
+              src={image}
+              alt="incline"
+              className="h-full"
+              priority={true}
+              sizes="(min-width: 1040px) 533px, (min-width: 640px) calc(45vw - 22px), calc(100vw - 32px)"
+            />
           </motion.div>
         ))}
       </div>

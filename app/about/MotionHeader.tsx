@@ -16,7 +16,7 @@ const MotionHeader = () => {
         animate="visible"
         className="text-5xl md:text-7xl xl:text-8xl text-white uppercase font-extrabold mb-6"
       >
-        atlas chania
+        about us
       </motion.h1>
       <p className="text-white w-full md:w-4/5 lg:w-1/2 text-base md:text-lg">
         Το Αtlas Chania είναι ένα σύγχρονο Strength & Condition Center που

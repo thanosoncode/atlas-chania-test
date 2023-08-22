@@ -55,7 +55,7 @@ const Contact = () => {
                 </div>
                 <div className="flex gap-6">
                   <BsTelephone size={24} color="#000" />
-                  <div className=" font-bold  mb-1">0030 698 739 1659</div>
+                  <div className=" font-bold  mb-1">698 739 1659</div>
                 </div>
                 <div className="flex gap-6">
                   <SlLocationPin size={24} color="#000" />

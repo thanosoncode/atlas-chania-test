@@ -45,7 +45,7 @@ const About = () => {
           <MotionHeader />
         </div>
       </div>
-      <div className="w-full xl:w-[1200px] mt-0 sm:mt-20 mx-auto px-4 sm:px-20 md:px-4">
+      <div className="w-full xl:w-[1200px] mt-0 sm:mt-20 mx-auto px-4 sm:px-20 md:px-20 lg:px-4">
         <div className=" w-full h-full relative">
           <p
             className={`uppercase text-white font-extrabold absolute hidden sm:block top-28 left-0 -z-10`}
@@ -62,8 +62,8 @@ const About = () => {
             <span>behind our gym</span>
           </h1>
         </div>
-        <div className="flex gap-y-16 md:gap-6 flex-col md:flex-row lg:gap-12 ">
-          <div className="w-full md:w-1/2 relative mt-6">
+        <div className="flex gap-y-16  flex-col lg:flex-row lg:gap-12 ">
+          <div className="w-full lg:w-1/2 relative mt-6">
             <p className="leading-7 text-neutral-700 text-lg">
               Το Atlas Chania ξεκίνησε δειλά το 2015 σε έναν χώρο 125 τμ και
               μοναδικό εξοπλισμό 2 bikes, 4 bars και 250 kg...
@@ -80,12 +80,12 @@ const About = () => {
               άλλες χιλιάδες ακόμα.
             </p>
           </div>
-          <div className="w-full md:w-1/2 relative">
-            <div className="w-full relative overflow-hidden">
+          <div className="w-full lg:w-1/2 relative">
+            <div className="w-full relative">
               <Image
                 src={aboutStory}
                 alt="story-image"
-                className="md:-mt-10 md:h-[450px] lg:h-auto lg:-mt-40 w-full md:w-auto object-cover hover:scale-105 duration-200"
+                className="md:-mt-10 md:h-[450px] lg:h-auto lg:-mt-40 w-full md:w-auto object-cover"
               />
             </div>
           </div>
@@ -247,9 +247,7 @@ const About = () => {
           <div className="flex w-full  sm:w-2/3 sm:flex-row  flex-wrap items-start justify-between sm:justify-center sm:px-0 px-4 gap-x-12 gap-y-3 sm:gap-y-6 pt-6">
             <div className="flex gap-3 justify-center items-center">
               <BsTelephone size={24} color="#262626" />
-              <div className=" font-semibold text-lg  mb-1">
-                0030 698 739 1659
-              </div>
+              <div className=" font-semibold text-lg  mb-1">698 739 1659</div>
             </div>
             <div className="flex gap-3 justify-center items-center">
               <AiOutlineMail size={24} color="#262626" />

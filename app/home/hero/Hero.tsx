@@ -96,9 +96,7 @@ const Hero = () => {
                     <p className="tracking-wider font-light  mb-1">
                       giannisdagou@gmail.com
                     </p>
-                    <p className="tracking-wider font-light ">
-                      0030 698 739 1659
-                    </p>
+                    <p className="tracking-wider font-light ">698 739 1659</p>
                   </div>
                 </div>
               </div>

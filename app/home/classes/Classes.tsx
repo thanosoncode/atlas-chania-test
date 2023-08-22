@@ -45,7 +45,7 @@ const Classes = () => {
                 alt="class-1"
                 className="hover:scale-105 duration-200 object-cover"
                 fill
-                sizes="(min-width: 1320px) 584px, (min-width: 860px) calc(42.27vw + 34px), (min-width: 740px) 670px, calc(95.71vw - 19px)"
+                sizes="(min-width: 1320px) 584px, (min-width: 860px) calc(42.27vw + 34px), (min-width: 400px) calc(100vw - 32px), calc(28.75vw + 239px)"
               />
             </div>
             <div className="text-neutral-400 mt-4 ">
@@ -64,7 +64,7 @@ const Classes = () => {
                 alt="class-1"
                 className="hover:scale-105 duration-200 object-cover"
                 fill
-                sizes="(min-width: 1320px) 584px, (min-width: 860px) calc(42.27vw + 34px), (min-width: 740px) 670px, calc(95.71vw - 19px)"
+                sizes="(min-width: 1320px) 584px, (min-width: 860px) calc(42.27vw + 34px), (min-width: 400px) calc(100vw - 32px), calc(28.75vw + 239px)"
               />
             </div>
             <div className="text-neutral-400 mt-4 ">
@@ -83,7 +83,7 @@ const Classes = () => {
                 alt="class-1"
                 className="hover:scale-105 duration-200 object-cover"
                 fill
-                sizes="(min-width: 1320px) 584px, (min-width: 860px) calc(42.27vw + 34px), (min-width: 740px) 670px, calc(95.71vw - 19px)"
+                sizes="(min-width: 1320px) 584px, (min-width: 860px) calc(42.27vw + 34px), (min-width: 400px) calc(100vw - 32px), calc(28.75vw + 239px)"
               />
             </div>
             <div className="text-neutral-400 mt-4 ">
@@ -102,7 +102,7 @@ const Classes = () => {
                 alt="class-1"
                 className="hover:scale-105 duration-200 object-cover"
                 fill
-                sizes="(min-width: 1320px) 584px, (min-width: 860px) calc(42.27vw + 34px), (min-width: 740px) 670px, calc(95.71vw - 19px)"
+                sizes="(min-width: 1320px) 584px, (min-width: 860px) calc(42.27vw + 34px), (min-width: 400px) calc(100vw - 32px), calc(28.75vw + 239px)"
               />
             </div>
             <div className="text-neutral-400 mt-4 ">
