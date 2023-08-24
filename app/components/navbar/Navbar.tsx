@@ -5,6 +5,7 @@ import Link from "next/link";
 import logo2 from "../../../public/logo.jpeg";
 import Menu from "../menu/Menu";
 import { useEffect, useRef, useState } from "react";
+import { Session } from "@/app/new-post/page";
 
 const links = [
   { name: "αρχικη", href: "/" },
@@ -16,7 +17,7 @@ const links = [
   { name: "επικοινωνια", href: "/contact" },
 ];
 
-const Navbar = () => {
+const Navbar = ({ session }: { session: Session | undefined }) => {
   const dropdownRef = useRef<HTMLDivElement>(null);
   const [open, setOpen] = useState(false);
 
@@ -76,9 +77,13 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-
-        <div className="block ">
+        <div className=" flex gap-4 items-center">
           <Menu open={open} onClick={() => setOpen(!open)} />
+          {/* {session && (
+            <div className="w-7 h-7  text-black flex justify-center items-center shrink-0 rounded-full bg-white">
+              {session.user.email.slice(0, 1).toUpperCase()}
+            </div>
+          )} */}
         </div>
       </div>
     </nav>

@@ -18,9 +18,9 @@ const Trainers = () => {
         <h4 className="uppercase text-5xl md:text-7xl  font-extrabold flex flex-col gap-2 justify-center items-center text-center">
           προπονητες
         </h4>
-        <div className="grid-container-trainers px-0 xs:px-12 sm:px-20 md:px-0">
-          <Link className=" block cursor-pointer " href="/ntagkounakis">
-            <div className="overflow-hidden max-h-[400px] w-full h-full">
+        <div className="flex px-0 xs:px-12 sm:px-20 md:px-0 pt-8">
+          <Link className=" block cursor-pointer h-full" href="/ntagkounakis">
+            <div className="overflow-hidden w-full h-full">
               <Image
                 src={johnAtlas}
                 alt="/"

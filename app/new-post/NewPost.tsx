@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import { MotionWrapper } from "../components/motionWrapper/MotionWrapper";
 import { redirect } from "next/navigation";
 import { Session } from "./page";
+import toast from "react-hot-toast";
 
 type UploadedImageData = {
   asset_id: string;
@@ -64,7 +65,7 @@ const NewPost: React.FC<NewPostProps> = ({ session }) => {
       const file =
         inputImageRef.current.files && inputImageRef.current.files[0];
       if (!file || !blogContent || !blogTitle) {
-        setMessage("Title, Content or Image are missing");
+        toast.error("Title, Content or Image are missing");
         return;
       }
       formData.append("file", file);
@@ -87,7 +88,7 @@ const NewPost: React.FC<NewPostProps> = ({ session }) => {
 
         if (blogResponse.status === 201) {
           setIsLoading(false);
-          setMessage("Success!");
+          toast.success("Post created!");
           router.refresh();
           router.push("/posts");
         } else {
