@@ -8,6 +8,7 @@ import NextAuthProvider from "./components/nextAuthProvider/SessionProvider";
 import ToastProvider from "./components/toastProvider/ToastProvider";
 import { getServerSession } from "next-auth";
 import { Session } from "./admin/page";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin", "greek"] });
 
@@ -27,6 +28,23 @@ export default async function RootLayout({
 
   return (
     <html lang="el">
+      <Head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LEYWPPLYS8"
+        ></Script>
+        <Script
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LEYWPPLYS8');
+  `,
+          }}
+        />
+      </Head>
       <body className={inter.className} style={{ overflowX: "hidden" }}>
         <NextAuthProvider>
           <ToastProvider />
