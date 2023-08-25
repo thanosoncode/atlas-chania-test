@@ -5,7 +5,7 @@ import Link from "next/link";
 import logo2 from "../../../public/logo.jpeg";
 import Menu from "../menu/Menu";
 import { useEffect, useRef, useState } from "react";
-import { Session } from "@/app/new-post/page";
+import { Session } from "@/app/admin/page";
 
 const links = [
   { name: "αρχικη", href: "/" },

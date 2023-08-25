@@ -9,9 +9,12 @@ export async function POST(request: NextRequest, response: NextResponse) {
   };
 
   if (!title || !content || !image) {
-    return NextResponse.json({
-      message: "title, image url and content are required",
-    });
+    return NextResponse.json(
+      {
+        message: "title, image url and content are required",
+      },
+      { status: 400 }
+    );
   }
 
   const blog = await prisma.post.create({

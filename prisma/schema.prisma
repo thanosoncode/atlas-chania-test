@@ -15,3 +15,11 @@ model Post {
   createdAt DateTime @default(now())
   likes     Int
 }
+
+
+model Wod {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  wodTitle     String
+  wodContent   String
+  createdAt DateTime @default(now())
+}

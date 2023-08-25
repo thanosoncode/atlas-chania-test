@@ -7,7 +7,7 @@ import { Inter } from "next/font/google";
 import NextAuthProvider from "./components/nextAuthProvider/SessionProvider";
 import ToastProvider from "./components/toastProvider/ToastProvider";
 import { getServerSession } from "next-auth";
-import { Session } from "./new-post/page";
+import { Session } from "./admin/page";
 
 const inter = Inter({ subsets: ["latin", "greek"] });
 

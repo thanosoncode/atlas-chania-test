@@ -15,7 +15,7 @@ const links = [
 const Footer = async () => {
   const session = await getServerSession();
 
-  const newPostUrl = session ? "/new-post" : "/api/auth/signin";
+  const adminPathname = session ? "/admin" : "/api/auth/signin";
 
   return (
     <footer className="bg-neutral-900">
@@ -43,8 +43,8 @@ const Footer = async () => {
                 {link.name}
               </Link>
             ))}
-            <Link href={newPostUrl} className="text-neutral-300">
-              Νέο άρθρο
+            <Link href={adminPathname} className="text-neutral-300">
+              Admin
             </Link>
           </div>
         </div>

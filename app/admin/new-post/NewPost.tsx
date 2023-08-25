@@ -5,7 +5,7 @@ import "react-quill/dist/quill.snow.css";
 import dynamic from "next/dynamic";
 import "./newpost.css";
 import { useRouter } from "next/navigation";
-import { MotionWrapper } from "../components/motionWrapper/MotionWrapper";
+import { MotionWrapper } from "../../components/motionWrapper/MotionWrapper";
 import { redirect } from "next/navigation";
 import { Session } from "./page";
 import toast from "react-hot-toast";
@@ -77,7 +77,7 @@ const NewPost: React.FC<NewPostProps> = ({ session }) => {
         const imageUrl = uploadedImage.secure_url;
 
         setMessage("Creating post...");
-        const blogResponse = await fetch("/api/new-post", {
+        const blogResponse = await fetch("/api/admin/new-post", {
           method: "POST",
           body: JSON.stringify({
             title: blogTitle,
@@ -110,8 +110,9 @@ const NewPost: React.FC<NewPostProps> = ({ session }) => {
 
   return (
     <MotionWrapper>
-      <div className="py-28 md:py-40">
+      <div className="pt-24 md:pt-40 pb-10">
         <div className="xl:w-[1200px] w-full px-4 mx-auto">
+          <h1 className="text-center mb-10">New Post</h1>
           <form className="flex flex-col gap-12" onSubmit={handleSubmit}>
             <div className="flex flex-col gap-2 sm:gap-4">
               <label htmlFor="title" className="text-xl font-bold uppercase">
