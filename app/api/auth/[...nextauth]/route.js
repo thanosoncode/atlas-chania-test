@@ -16,7 +16,7 @@ const authOptions = {
       }
     },
     async redirect({ url, baseUrl }) {
-      return baseUrl + "/new-post";
+      return baseUrl + "/admin";
     },
   },
   providers: [
