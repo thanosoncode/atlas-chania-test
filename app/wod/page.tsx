@@ -13,17 +13,19 @@ const WodPage = async () => {
   })) as unknown;
 
   return (
-    <Wod
-      session={session}
-      allWods={
-        allWods as {
-          id: string;
-          wodTitle: string;
-          wodContent: string;
-          createdAt: Date;
-        }[]
-      }
-    />
+    <div key={Math.random()}>
+      <Wod
+        session={session}
+        allWods={
+          allWods as {
+            id: string;
+            wodTitle: string;
+            wodContent: string;
+            createdAt: Date;
+          }[]
+        }
+      />
+    </div>
   );
 };
 export default WodPage;

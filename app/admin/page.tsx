@@ -13,7 +13,7 @@ const AdminPage = async () => {
   }
 
   return (
-    <div className="pt-60 pb-28">
+    <div className="pt-60 pb-40 sm:pb-96">
       <div className="flex items-center justify-center gap-20">
         <Link
           className="bg-transparent text-black border border-black hover:bg-black  hover:text-white duration-200  px-6 text-base  block py-5 w-min whitespace-nowrap font-bold "

@@ -58,7 +58,7 @@ const Wod = ({
   };
 
   return (
-    <div className="py-12 md:py-28 relative">
+    <div className="py-12 md:py-28 relative" key={Math.random()}>
       <div
         className="absolute inset-0 -z-10"
         style={{
