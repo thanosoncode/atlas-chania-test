@@ -2,13 +2,14 @@
 
 import React, { useMemo, useState } from "react";
 import { Session } from "./page";
-import { redirect } from "next/navigation";
+import { redirect, useRouter } from "next/navigation";
 import "react-quill/dist/quill.snow.css";
 import dynamic from "next/dynamic";
 import "./newwod.css";
 import toast from "react-hot-toast";
 
 const NewWod = ({ session }: { session: Session | undefined }) => {
+  const router = useRouter();
   const [message, setMessage] = useState("");
   const [wodTitle, setWodTitle] = useState("");
   const [wodContent, setWodContent] = useState("");
@@ -41,13 +42,16 @@ const NewWod = ({ session }: { session: Session | undefined }) => {
         method: "POST",
         body: JSON.stringify({ wodTitle, wodContent }),
       });
-      const data = await response.json();
-      setIsLoading(false);
-      toast.success("Wod created!");
-      setWodTitle("");
-      setWodContent("");
-      setMessage("");
-      console.log("data", data);
+      if (response.ok) {
+        setIsLoading(false);
+        toast.success("Wod created!");
+
+        setWodTitle("");
+        setWodContent("");
+        setMessage("");
+        router.refresh();
+        router.push("/wod");
+      }
     } catch (error) {
       setIsLoading(false);
       setWodTitle("");
