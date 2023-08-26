@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 const Crossfit = () => {
   return (
     <MotionWrapper>
-      <div className="pt-4 sm:pt-16 relative pb-12 ">
+      <div className="pt-4 sm:pt-16 relative pb-20 ">
         <div className="w-full px-4 xl:w-[1200px] mx-auto relative overflow-y-hidden mb-16">
           <h1 className="uppercase text-4xl sm:text-7xl  font-extrabold mt-24">
             crossfit

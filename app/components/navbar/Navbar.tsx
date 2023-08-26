@@ -11,6 +11,7 @@ const links = [
   { name: "αρχικη", href: "/" },
   { name: "σχετικα με μας", href: "/about" },
   { name: "αρθρα & νεα", href: "/posts" },
+  { name: "wod", href: "/wod" },
   { name: "αθληματα", href: "/crossfit" },
   { name: "προπονητες", href: "/ntagkounakis" },
   { name: "συνδρομες", href: "/pricing" },
@@ -60,7 +61,7 @@ const Navbar = ({ session }: { session: Session | undefined }) => {
         </Link>
         <div
           ref={dropdownRef}
-          className={` w-full absolute mx-auto flex flex-col  bg-neutral-950 gap-4  px-6 pb-4  transition-all duration-300 ease-in-out -z-10 left-0 ${
+          className={` w-full absolute mx-auto flex flex-col  bg-neutral-950 gap-2  px-6 pb-4  transition-all duration-300 ease-in-out -z-10 left-0 ${
             open ? "top-[64px] md:top-[112px] " : "-top-[360px]"
           }`}
         >

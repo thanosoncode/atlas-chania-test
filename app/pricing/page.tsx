@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const Pricing = () => {
   return (
     <MotionWrapper>
-      <div className="pt-20 sm:pt-40">
+      <div className="pt-20 sm:pt-40 pb-20">
         <div className="w-full xl:w-[1200px] mx-auto relative overflow-y-hidden px-4">
           <div
             className="uppercase text-white lg:block hidden font-extrabold absolute  pb-96 top-10 -z-10 left-1/2 -translate-x-1/2"

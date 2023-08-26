@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const About = () => {
   return (
     <MotionWrapper>
-      <div className="relative ">
+      <div className="relative">
         <div
           className="absolute inset-0 -z-10"
           style={{
@@ -219,7 +219,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="w-full xl:w-[1200px] mx-auto relative flex flex-col items-center">
+      <div className="w-full xl:w-[1200px] mx-auto relative flex flex-col items-center pb-20">
         <div
           className={`uppercase text-white font-extrabold md:block hidden absolute left-1/2 -translate-x-1/2 -z-10`}
           style={{

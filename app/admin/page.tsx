@@ -21,12 +21,12 @@ const AdminPage = async () => {
         >
           New Post
         </Link>
-        {/* <Link
+        <Link
           className="bg-transparent text-black border border-black hover:bg-black  hover:text-white duration-200  px-6 text-base  block py-5 w-min whitespace-nowrap font-bold "
           href="/admin/new-wod"
         >
           New wod
-        </Link> */}
+        </Link>
       </div>
     </div>
   );

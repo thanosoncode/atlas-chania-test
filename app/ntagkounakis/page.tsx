@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 const SingleTrainer = () => {
   return (
     <MotionWrapper>
-      <div className="pt-6 sm:pt-12 md:pt-28">
+      <div className="pt-6 sm:pt-12 md:pt-28 pb-20">
         <div className="w-full xl:w-[1200px] mx-auto relative overflow-y-hidden px-4">
           <p
             className="md:block hidden uppercase text-white font-extrabold absolute  pb-96 top-32 right-0 -z-10"

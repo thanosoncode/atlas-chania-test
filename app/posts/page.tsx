@@ -26,7 +26,7 @@ const Posts = async () => {
 
   return (
     <MotionWrapper>
-      <div className="pt-24 md:pt-36 pb-32 sm:pb-40">
+      <div className="pt-24 md:pt-36 pb-20">
         <div className="xl:w-[1200px] w-full px-4 mx-auto">
           <MotionTitle />
           <div className="grid-container-articles mx-auto ">

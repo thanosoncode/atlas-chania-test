@@ -62,7 +62,7 @@ const Post = async ({ params: { id } }: { params: { id: string } }) => {
             </div>
             <div className="flex flex-col gap-0.5 sm:gap-2 text-black ">
               <p className="uppercase font-bold text-lg sm:text-xl">
-                Γιαννης Νταγουνακης
+                Γιαννης Νταγκουνακης
               </p>
               <p className="text-base sm:text-lg">{dayName}</p>
             </div>

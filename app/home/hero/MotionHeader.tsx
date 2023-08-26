@@ -61,10 +61,10 @@ const MotionHeader = () => {
             transition={{ delay: 1 }}
           >
             <Link
-              href="/crossfit"
+              href="/wod"
               className="bg-transparent text-white border border-white hover:bg-white hover:text-black duration-200 uppercase px-6 text-base  block md:px-16 py-5 md:w-min whitespace-nowrap font-bold md:text-lg"
             >
-              αθληματα
+              wod
             </Link>
           </motion.div>
         </div>

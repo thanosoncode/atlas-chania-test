@@ -51,7 +51,7 @@ export default async function RootLayout({
           <div className="absolute z-20 left-1/2 -translate-x-1/2">
             <Navbar session={session} />
           </div>
-          <div className="mb-20 overflow-x-hidden  min-h-[calc(100vh-234px)] sm:min-h-[calc(100vh-294px)]">
+          <div className="overflow-x-hidden  min-h-[calc(100vh-234px)] sm:min-h-[calc(100vh-294px)]">
             <MotionWrapper>{children}</MotionWrapper>
           </div>
           <Footer />

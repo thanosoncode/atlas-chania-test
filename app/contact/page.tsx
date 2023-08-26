@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const Contact = () => {
   return (
     <MotionWrapper>
-      <div className="pt-12 md:pt-40">
+      <div className="pt-12 md:pt-40 pb-20">
         <div className="w-full px-4 xl:w-[1200px] mx-auto relative overflow-y-hidden sm:mb-20">
           <div
             className="uppercase text-white xl:block hidden font-extrabold absolute  pb-96 -top-4 -z-10"
