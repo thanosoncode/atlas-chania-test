@@ -2,12 +2,13 @@ import { prisma } from "@/prisma/prismaClient";
 import { NextResponse, type NextRequest } from "next/server";
 
 export async function POST(request: NextRequest, response: NextResponse) {
-  const { wodTitle, wodContent } = (await request.json()) as {
+  const { wodTitle, wodContent, wodPlainText } = (await request.json()) as {
     wodTitle: string;
     wodContent: string;
+    wodPlainText: string;
   };
 
-  if (!wodTitle || !wodContent) {
+  if (!wodTitle || !wodContent || !wodPlainText) {
     return NextResponse.json(
       {
         message: "title, and content are required",
@@ -20,6 +21,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
     data: {
       wodTitle,
       wodContent,
+      wodPlainText,
     },
   });
 

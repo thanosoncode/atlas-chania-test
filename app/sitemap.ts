@@ -15,6 +15,7 @@ export default async function () {
     "crossfit",
     "powerlifting",
     "opengym",
+    "wod",
     "weightlifting",
     "pricing",
     "trainers",

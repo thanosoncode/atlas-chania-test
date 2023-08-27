@@ -16,10 +16,10 @@ model Post {
   likes     Int
 }
 
-
 model Wod {
-  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  id           String   @id @default(auto()) @map("_id") @db.ObjectId
   wodTitle     String
   wodContent   String
-  createdAt DateTime @default(now())
+  wodPlainText String
+  createdAt    DateTime @default(now())
 }

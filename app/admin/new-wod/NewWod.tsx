@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useRef, useState } from "react";
 import { Session } from "./page";
 import { redirect, useRouter } from "next/navigation";
 import "react-quill/dist/quill.snow.css";
@@ -29,6 +29,7 @@ const NewWod = ({ session }: { session: Session | undefined }) => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
     try {
       setIsLoading(true);
       setMessage("Creating Wod...");
@@ -38,9 +39,15 @@ const NewWod = ({ session }: { session: Session | undefined }) => {
         setMessage("");
         return;
       }
+      let wodPlainText = "";
+      if (quillContainerRef.current) {
+        wodPlainText =
+          quillContainerRef.current.querySelector(".ql-editor")?.textContent ??
+          "";
+      }
       const response = await fetch("/api/admin/new-wod", {
         method: "POST",
-        body: JSON.stringify({ wodTitle, wodContent }),
+        body: JSON.stringify({ wodTitle, wodContent, wodPlainText }),
       });
       if (response.ok) {
         setIsLoading(false);
@@ -60,6 +67,8 @@ const NewWod = ({ session }: { session: Session | undefined }) => {
       throw new Error("Something went wrong, try again later...");
     }
   };
+
+  const quillContainerRef = useRef<HTMLDivElement>(null);
 
   if (!session) {
     redirect("/");
@@ -86,7 +95,7 @@ const NewWod = ({ session }: { session: Session | undefined }) => {
             <label htmlFor="title" className="text-xl font-bold uppercase">
               wod
             </label>
-            <div className="editor-container">
+            <div className="editor-container" ref={quillContainerRef}>
               <ReactQuill
                 theme="snow"
                 value={wodContent}
@@ -94,15 +103,10 @@ const NewWod = ({ session }: { session: Session | undefined }) => {
                 modules={modules}
                 className=""
                 placeholder="20 Pull Ups
-
                 30 Push Ups
-                
                 40 Sit Ups
-                
                 50 Squats
-                
                 Rest 3 Mins
-                
                 Repeat All For 5 Rounds"
               />
             </div>
