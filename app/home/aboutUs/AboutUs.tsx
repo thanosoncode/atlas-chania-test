@@ -4,7 +4,7 @@ import MotionImageTest from "./MotionImagesTest";
 const AboutUs = () => {
   return (
     <div className="relative ">
-      <div className="flex justify-center items-center pt-32 sm:pt-60 flex-col w-full px-4">
+      <div className="flex justify-center items-center pt-24 sm:pt-48 flex-col w-full px-4">
         <div>
           <div className="hidden lg:flex w-full h-full justify-center  ">
             <ShadowHeading title="about us" top="top-12" />
@@ -21,7 +21,7 @@ const AboutUs = () => {
             Your Physical Self.
           </div>
         </div>
-        <div className="mt-12 mb-28">
+        <div className="mt-12 mb-24">
           <MotionImageTest />
         </div>
       </div>

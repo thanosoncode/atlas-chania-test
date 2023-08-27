@@ -9,7 +9,7 @@ import ShadowHeadingBlack from "@/app/components/shadowHeading/ShadowHeadingBlac
 
 const Classes = () => {
   return (
-    <div className="bg-neutral-900 pb-[120px] flex flex-col items-center">
+    <div className="bg-neutral-900  pb-16 sm:pb-[120px] flex flex-col items-center">
       <div className="w-full lg:w-[1200px] mx-auto relative px-4">
         <div className="top-[70px]   md:top-36 lg:top-52 text-white absolute z-20 flex justify-between inset-0 items-center w-full">
           <h4 className="block sm:hidden text-5xl xl:text-6xl w-full uppercase text-center font-extrabold lg:whitespace-nowrap px-2 sm:px-6">

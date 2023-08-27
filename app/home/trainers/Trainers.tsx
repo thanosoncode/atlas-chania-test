@@ -7,14 +7,14 @@ import "./Trainers.css";
 
 const Trainers = () => {
   return (
-    <div className="relative  pb-20 md:pb-40 px-4">
+    <div className="relative  pb-12 sm:pb-20 md:pb-40 px-4">
       <div className="hidden lg:flex w-full h-full justify-center  ">
         <ShadowHeading title="trainers" top="top-14" />
       </div>
       <div className="hidden md:flex lg:hidden w-full h-full justify-center  ">
         <ShadowHeading title="trainers" top="top-24" size={150} />
       </div>
-      <div className="pt-20 md:pt-56">
+      <div className="pt-12 sm:pb-20 md:pt-56">
         <h4 className="uppercase text-5xl md:text-7xl  font-extrabold flex flex-col gap-2 justify-center items-center text-center">
           προπονητες
         </h4>
