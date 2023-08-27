@@ -1,6 +1,4 @@
 import ShadowHeading from "../../components/shadowHeading/ShadowHeading";
-import Link from "next/link";
-import MotionImages from "./MotionImages";
 import MotionImageTest from "./MotionImagesTest";
 
 const AboutUs = () => {

@@ -25,7 +25,7 @@ const PostCard: React.FC<PostCardProps> = ({ image, title, id, createdAt }) => {
       >
         <Image
           src={image}
-          alt="article-1"
+          alt="article-img"
           fill
           className="object-cover hover:scale-105 duration-200"
           sizes="(min-width: 1280px) 371px, (min-width: 1000px) calc(25.77vw + 46px), (min-width: 680px) calc(50vw - 34px), (min-width: 380px) calc(100vw - 48px), calc(20vw + 240px)"

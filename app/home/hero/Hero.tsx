@@ -3,7 +3,6 @@ import { MdOutlineLocationOn } from "react-icons/md";
 import { AiOutlineMail } from "react-icons/ai";
 
 import Image from "next/image";
-import biceps from "../../../public/bicep-curl.jpg";
 import koritsaki from "../../../public/koritsaki-2.jpeg";
 import MotionHeader from "./MotionHeader";
 
