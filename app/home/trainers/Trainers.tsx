@@ -7,7 +7,7 @@ import "./Trainers.css";
 
 const Trainers = () => {
   return (
-    <div className="relative  pb-12 sm:pb-20 md:pb-40 px-4">
+    <div className="relative  pb-12  px-4">
       <div className="hidden lg:flex w-full h-full justify-center  ">
         <ShadowHeading title="trainers" top="top-14" />
       </div>

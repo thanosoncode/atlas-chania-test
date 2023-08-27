@@ -21,7 +21,7 @@ const PostCard: React.FC<PostCardProps> = ({ image, title, id, createdAt }) => {
     <div className="w-full h-full relative">
       <Link
         href={`/posts/${id}`}
-        className="block relative w-full h-[70%] overflow-hidden"
+        className="block relative w-full h-[80%] overflow-hidden"
       >
         <Image
           src={image}
@@ -36,7 +36,7 @@ const PostCard: React.FC<PostCardProps> = ({ image, title, id, createdAt }) => {
         </div>
       </Link>
       <Link href={`/posts/${id}`} className="px-2">
-        <h4 className="text-xl font-bold text-white mt-2 mb-2 ">{title}</h4>
+        <h4 className="text-xl font-bold text-white -mt-4 ">{title}</h4>
         {/* <Link href={`/posts/${id}`} className="flex gap-1.5 ">
           <h4 className=" text-base font-bold text-white tracking-wider hover:text-red-500 duration-200 flex">
             <span>Διάβασε περισσότερα</span>
