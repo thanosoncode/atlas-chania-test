@@ -11,7 +11,7 @@ const Classes = () => {
   return (
     <div className="bg-neutral-900 pb-[120px] flex flex-col items-center">
       <div className="w-full lg:w-[1200px] mx-auto relative px-4">
-        <div className="top-[100px]   md:top-36 lg:top-52 text-white absolute z-20 flex justify-between inset-0 items-center w-full">
+        <div className="top-[70px]   md:top-36 lg:top-52 text-white absolute z-20 flex justify-between inset-0 items-center w-full">
           <h4 className="block sm:hidden text-5xl xl:text-6xl w-full uppercase text-center font-extrabold lg:whitespace-nowrap px-2 sm:px-6">
             αθληματα
           </h4>
@@ -36,7 +36,7 @@ const Classes = () => {
           />
         </div>
       </div>
-      <div className="pt-[160px] md:pt-[240px] lg:pt-[280px] px-4 ">
+      <div className="pt-[140px] md:pt-[240px] lg:pt-[280px] px-4 ">
         <div className="grid-container-classes">
           <Link href="/weightlifting" className="w-full h-full block">
             <div className="relative w-full  h-[70%] overflow-hidden">

@@ -48,7 +48,7 @@ const FollowUsOnInstagram = () => {
           <ShadowHeading title="instagram" top="top-24" size={150} />
         </div>
       </div>
-      <div className="pt-24 md:pt-48 px-4">
+      <div className="pt-16 md:pt-48 px-4">
         <a
           href="https://www.instagram.com/johnatlas_elitefitness/?hl=el"
           target="_blank"

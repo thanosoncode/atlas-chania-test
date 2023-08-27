@@ -11,9 +11,9 @@ const Posts = async () => {
 
   return (
     <>
-      <div className="bg-neutral-900 pb-28  w-screen">
+      <div className="bg-neutral-900 pb-[60px] sm:pb-28  w-screen">
         <div className="w-full lg:w-[1200px] relative mx-auto px-6">
-          <div className="top-28 sm:top-52 text-white absolute z-20 flex justify-between inset-0 items-center w-full">
+          <div className="top-[70px] sm:top-52 text-white absolute z-20 flex justify-center sm:justify-between inset-0 items-center w-full">
             <h4 className="text-5xl sm:text-7xl uppercase text-center font-extrabold lg:whitespace-nowrap px-6">
               αρθρα &amp; νεα
             </h4>

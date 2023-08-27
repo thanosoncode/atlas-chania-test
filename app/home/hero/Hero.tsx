@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <>
       <div className="pb-60 md:pb-40">
-        <div className="relative w-full h-[1100px] ">
+        <div className="relative w-full h-[1000px] sm:h-[1100px] ">
           <div
             className="absolute inset-0 z-10"
             style={{
@@ -30,7 +30,7 @@ const Hero = () => {
           <MotionHeader />
         </div>
       </div>
-      <div className="absolute top-[960px] left-0 z-30 h-80 md:h-72 w-full  ">
+      <div className="absolute top-[860px] sm:top-[960px] left-0 z-30 h-80 md:h-72 w-full  ">
         <div className="flex h-full">
           <div className="w-full bg-neutral-900 h-full"></div>
           <div className="w-full xl:w-[1200px] bg-neutral-900 shrink-0 text-white md:h-full px-4 lg:px-12 pt-8 md:pt-20 pb-8 md:pb-0 flex justify-center md:block h-[420px]">
