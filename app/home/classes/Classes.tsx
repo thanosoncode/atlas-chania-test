@@ -72,7 +72,7 @@ const Classes = () => {
                 Powerlifting
               </h3>
               <p className="text-base sm:text-lg  block  font-semibold tracking-wide text-neutral-300 mb-1 md:mb-2">
-                Εκτόξευσε την δύναμή σου
+                Μάθε την τέχνη του powerlifting και εκτόξευσε την δύναμή σου
               </p>
             </div>
           </Link>
