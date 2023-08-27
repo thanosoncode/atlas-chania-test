@@ -48,8 +48,8 @@ const Classes = () => {
                 sizes="(min-width: 1320px) 584px, (min-width: 860px) calc(42.27vw + 34px), (min-width: 400px) calc(100vw - 32px), calc(28.75vw + 239px)"
               />
             </div>
-            <div className="text-neutral-400 mt-4 ">
-              <h3 className="text-3xl text-white font-bold mb-1 md:mb-2 tracking-wide uppercase">
+            <div className="text-neutral-400 mt-2 ">
+              <h3 className="text-3xl text-white font-bold   tracking-wide uppercase">
                 Olympic Weightlifting
               </h3>
               <p className="text-base sm:text-lg  block  font-semibold tracking-wide text-neutral-300 mb-1 md:mb-2">
@@ -67,12 +67,12 @@ const Classes = () => {
                 sizes="(min-width: 1320px) 584px, (min-width: 860px) calc(42.27vw + 34px), (min-width: 400px) calc(100vw - 32px), calc(28.75vw + 239px)"
               />
             </div>
-            <div className="text-neutral-400 mt-4 ">
-              <h3 className="text-3xl text-white font-bold mb-1 md:mb-2 tracking-wide uppercase">
+            <div className="text-neutral-400 mt-2 ">
+              <h3 className="text-3xl text-white font-bold tracking-wide uppercase">
                 Powerlifting
               </h3>
               <p className="text-base sm:text-lg  block  font-semibold tracking-wide text-neutral-300 mb-1 md:mb-2">
-                Μάθε την τέχνη του powerlifting και εκτόξευσε την δύναμή σου
+                Εκτόξευσε την δύναμή σου
               </p>
             </div>
           </Link>
@@ -86,8 +86,8 @@ const Classes = () => {
                 sizes="(min-width: 1320px) 584px, (min-width: 860px) calc(42.27vw + 34px), (min-width: 400px) calc(100vw - 32px), calc(28.75vw + 239px)"
               />
             </div>
-            <div className="text-neutral-400 mt-4 ">
-              <h3 className="text-3xl text-white uppercase font-bold mb-1 md:mb-2 tracking-wide">
+            <div className="text-neutral-400 mt-2 ">
+              <h3 className="text-3xl text-white uppercase font-bold tracking-wide">
                 Crossfit
               </h3>
               <p className="text-base sm:text-lg block  font-semibold tracking-wide text-neutral-300 mb-1 md:mb-2">
@@ -105,8 +105,8 @@ const Classes = () => {
                 sizes="(min-width: 1320px) 584px, (min-width: 860px) calc(42.27vw + 34px), (min-width: 400px) calc(100vw - 32px), calc(28.75vw + 239px)"
               />
             </div>
-            <div className="text-neutral-400 mt-4 ">
-              <h3 className="text-3xl text-white font-bold mb-1 md:mb-2 tracking-wide uppercase">
+            <div className="text-neutral-400 mt-2 ">
+              <h3 className="text-3xl text-white font-bold  tracking-wide uppercase">
                 Open gym
               </h3>
               <p className="text-base sm:text-lg  block  font-semibold tracking-wide text-neutral-300 mb-1 md:mb-2">

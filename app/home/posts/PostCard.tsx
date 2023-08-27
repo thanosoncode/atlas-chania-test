@@ -35,17 +35,15 @@ const PostCard: React.FC<PostCardProps> = ({ image, title, id, createdAt }) => {
           <p className="text-sm font-bold">{month.slice(0, 3)}</p>
         </div>
       </Link>
-      <div className="px-2">
-        <h4 className="text-xl font-bold text-white mt-2 mb-2  leading-normal">
-          {title}
-        </h4>
-        <Link href={`/posts/${id}`} className="flex gap-1.5 ">
+      <Link href={`/posts/${id}`} className="px-2">
+        <h4 className="text-xl font-bold text-white mt-2 mb-2 ">{title}</h4>
+        {/* <Link href={`/posts/${id}`} className="flex gap-1.5 ">
           <h4 className=" text-base font-bold text-white tracking-wider hover:text-red-500 duration-200 flex">
             <span>Διάβασε περισσότερα</span>
             <BiSolidChevronRight size={"24px"} />
           </h4>
-        </Link>
-      </div>
+        </Link> */}
+      </Link>
     </div>
   );
 };
