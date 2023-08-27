@@ -69,7 +69,7 @@ const Navbar = ({ session }: { session: Session | undefined }) => {
             <Link
               key={link.name}
               href={link.href}
-              className={`block py-2 uppercase text-lg hover:text-red-500 duration-300 text-white ${
+              className={`block py-2 uppercase text-lg hover:text-red-500 duration-300 text-white font-bold ${
                 open ? "" : ""
               } `}
               onClick={() => setOpen(false)}
