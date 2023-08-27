@@ -10,7 +10,7 @@ const headerVariants = {
 
 const MotionHeader = () => {
   return (
-    <div className="absolute top-36 sm:top-56 md:top-1/4 left-1/2 -translate-x-1/2   z-10  w-[calc(100%-32px)]">
+    <div className="absolute top-40 sm:top-56 md:top-1/4 left-1/2 -translate-x-1/2   z-10  w-[calc(100%-32px)]">
       <div className="text-white text-center flex flex-col gap-8 items-center justify-center">
         <motion.h1
           variants={headerVariants}
@@ -18,7 +18,7 @@ const MotionHeader = () => {
           animate="visible"
           className="hidden md:flex flex-col gap-6  text-5xl  md:text-6xl xl:text-8xl uppercase font-extrabold"
         >
-          <span className="whitespace-nowrap">We will teach you</span>
+          <span className="whitespace-nowrap">We teach you</span>
           <span className="whitespace-nowrap">how to lift the world</span>
         </motion.h1>
         <motion.h1
@@ -27,8 +27,7 @@ const MotionHeader = () => {
           animate="visible"
           className="md:hidden flex-col gap-6  text-[2.75rem] xs:text-5xl flex sm:text-6xl  uppercase font-extrabold"
         >
-          <span className="whitespace-nowrap">We will</span>
-          <span className="whitespace-nowrap">teach you</span>
+          <span className="whitespace-nowrap">We teach you</span>
           <span className="whitespace-nowrap">how to lift</span>
           <span className="whitespace-nowrap">the world</span>
         </motion.h1>
