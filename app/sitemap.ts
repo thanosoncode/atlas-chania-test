@@ -4,7 +4,7 @@ export default async function () {
   const allPosts = await prisma.post.findMany();
 
   const posts = allPosts.map((post) => ({
-    url: `https://atlaschania.gr/${post.id}`,
+    url: `https://www.atlaschania.gr/${post.id}`,
     lastModified: new Date().toISOString(),
   }));
 
