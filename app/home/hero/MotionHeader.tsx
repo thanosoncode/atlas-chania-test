@@ -10,7 +10,7 @@ const headerVariants = {
 
 const MotionHeader = () => {
   return (
-    <div className="absolute top-40 sm:top-56 md:top-1/4 left-1/2 -translate-x-1/2   z-10  w-[calc(100%-32px)]">
+    <div className="absolute top-48 sm:top-56 md:top-1/4 left-1/2 -translate-x-1/2   z-10  w-[calc(100%-32px)]">
       <div className="text-white text-center flex flex-col gap-8 items-center justify-center">
         <motion.h1
           variants={headerVariants}

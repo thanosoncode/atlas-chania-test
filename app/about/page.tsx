@@ -1,7 +1,7 @@
 import Image from "next/image";
-import about from "../../public/about-hero.jpeg";
-import aboutStory from "../../public/about-story.jpeg";
-import facilities from "../../public/facilities.jpeg";
+import back from "../../public/back.jpeg";
+import assaults from "../../public/assaults.jpeg";
+import angle from "../../public/angle.jpeg";
 import location from "../../public/location.jpeg";
 import { PlayButton, PlayButtonMobile } from "../components/svgs/PlayButton";
 import Passion from "../components/svgs/Passion";
@@ -33,11 +33,11 @@ const About = () => {
             backdropFilter: "brightness(50%)",
           }}
         ></div>
-        <div className="relative -z-20 ">
+        <div className="relative -z-20 w-full">
           <Image
-            src={about}
+            src={back}
             alt="about"
-            className="h-[700px] xl:h-auto object-cover"
+            className="h-[700px] xl:h-auto object-cover w-full"
             sizes="100vw"
           />
         </div>
@@ -83,7 +83,7 @@ const About = () => {
           <div className="w-full lg:w-1/2 relative">
             <div className="w-full relative">
               <Image
-                src={aboutStory}
+                src={assaults}
                 alt="story-image"
                 className="md:-mt-10 md:h-[450px] lg:h-auto lg:-mt-40 w-full md:w-auto object-cover"
               />
@@ -120,7 +120,11 @@ const About = () => {
           sociis morbi sed sagittis consectetur in quisque placerat enim. Vitae.
         </p>
         <div className="w-full  relative">
-          <Image src={facilities} alt="facilites" className="object-cover" />
+          <Image
+            src={angle}
+            alt="facilites"
+            className="object-cover max-h-[500px]"
+          />
           <div className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
             <PlayButton />
           </div>

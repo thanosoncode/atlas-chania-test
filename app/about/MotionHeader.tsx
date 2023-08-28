@@ -19,7 +19,7 @@ const MotionHeader = () => {
         about us
       </motion.h1>
       <p className="text-white w-full md:w-4/5 lg:w-1/2 text-base md:text-lg">
-        Το Αtlas Chania είναι ένα σύγχρονο Strength & Condition Center που
+        Το Αtlas Chania είναι ένα σύγχρονο Strength & Conditioning Center που
         αποσκοπεί στο να μάθει τον σύγχρονο ασκούμενο να γυμνάζεται σωστά με μη
         συμβατικούς τρόπους &#40;κλασσικό γυμναστήριο&#41; ανάλογα με το τι
         χρειάζεται και τα θέλω του.
