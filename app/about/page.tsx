@@ -37,7 +37,7 @@ const About = () => {
           <Image
             src={back}
             alt="about"
-            className="h-[700px] xl:h-auto object-cover w-full"
+            className="h-[700px] xl:h-auto max-h-[900px] object-cover w-full"
             sizes="100vw"
           />
         </div>
@@ -137,7 +137,7 @@ const About = () => {
         <div className="absolute inset-0 bg-neutral-900 -top-[100px]  md:-top-[200px] lg:-top-[350px] -z-10"></div>
       </div>
       <div className="bg-neutral-900 text-white pt-[50px]">
-        <div className="w-full px-4 xl:w-[1200px] mx-auto relative py-16 sm:py-24 sm:pt-0 sm:pb-[260px]">
+        <div className="w-full px-4 xl:w-[1200px] mx-auto relative pt-16 pb-8 sm:py-24 sm:pt-0 sm:pb-[230px]">
           <div className="hidden sm:flex text-5xl lg:text-6xl whitespace-nowrap font-extrabold uppercase text-white absolute z-20 top-[100px] px-4 sm:top-[135px] left-0  justify-start items-center ">
             <span>κεντρικες</span>
             <span>αξιες</span>
