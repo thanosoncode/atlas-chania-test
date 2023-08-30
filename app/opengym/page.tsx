@@ -33,6 +33,8 @@ const OpenGym = () => {
             <Image
               src={opengym}
               alt="opengym"
+              priority
+              placeholder="blur"
               className="w-full md:w-4/5 xl:w-3/4 h-1/2"
               sizes="(min-width: 1280px) 876px, (min-width: 780px) 80vw, calc(100vw - 32px)"
             />

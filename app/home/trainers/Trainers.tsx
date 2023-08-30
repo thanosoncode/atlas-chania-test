@@ -24,6 +24,7 @@ const Trainers = () => {
               <Image
                 src={johnAtlas}
                 alt="/"
+                placeholder="blur"
                 className="object-contain w-full  h-full duration-200 hover:scale-105 object-center"
                 sizes="(min-width: 1300px) 387px, (min-width: 780px) 30.2vw, calc(100vw - 32px)"
               />

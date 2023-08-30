@@ -45,6 +45,7 @@ const Classes = () => {
                 alt="class-1"
                 className="hover:scale-105 duration-200 object-cover"
                 fill
+                placeholder="blur"
                 sizes="(min-width: 1320px) 584px, (min-width: 860px) calc(42.27vw + 34px), (min-width: 400px) calc(100vw - 32px), calc(28.75vw + 239px)"
               />
             </div>
@@ -64,6 +65,7 @@ const Classes = () => {
                 alt="class-1"
                 className="hover:scale-105 duration-200 object-cover"
                 fill
+                placeholder="blur"
                 sizes="(min-width: 1320px) 584px, (min-width: 860px) calc(42.27vw + 34px), (min-width: 400px) calc(100vw - 32px), calc(28.75vw + 239px)"
               />
             </div>
@@ -83,6 +85,7 @@ const Classes = () => {
                 alt="class-1"
                 className="hover:scale-105 duration-200 object-cover"
                 fill
+                placeholder="blur"
                 sizes="(min-width: 1320px) 584px, (min-width: 860px) calc(42.27vw + 34px), (min-width: 400px) calc(100vw - 32px), calc(28.75vw + 239px)"
               />
             </div>
@@ -102,6 +105,7 @@ const Classes = () => {
                 alt="class-1"
                 className="hover:scale-105 duration-200 object-cover"
                 fill
+                placeholder="blur"
                 sizes="(min-width: 1320px) 584px, (min-width: 860px) calc(42.27vw + 34px), (min-width: 400px) calc(100vw - 32px), calc(28.75vw + 239px)"
               />
             </div>

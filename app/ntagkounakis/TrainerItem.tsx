@@ -12,7 +12,12 @@ const TrainerItem: React.FC<TrainerItemProps> = ({ href, image, name }) => {
   return (
     <div>
       <Link href={href} className="block w-[200px] h-[300px] relative ">
-        <Image src={image} alt={name} className="object-cover h-full" />
+        <Image
+          src={image}
+          alt={name}
+          className="object-cover h-full"
+          placeholder="blur"
+        />
       </Link>
       <Link
         href={href}

@@ -31,7 +31,8 @@ const MotionImageTest = () => {
               src={image}
               alt="incline"
               className="h-full"
-              priority={true}
+              priority
+              placeholder="blur"
               sizes="(min-width: 1040px) 533px, (min-width: 640px) calc(45vw - 22px), calc(100vw - 32px)"
             />
           </motion.div>

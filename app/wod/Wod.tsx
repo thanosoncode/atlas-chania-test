@@ -70,7 +70,8 @@ const Wod = ({
         alt="bg-image"
         fill
         className="-z-20  object-cover opacity-90"
-        priority={true}
+        priority
+        placeholder="blur"
         sizes="100vw"
       />
       <div className="w-full xl:w-[1200px] mx-auto overflow-y-hidden px-4 mt-12 text-white">

@@ -35,6 +35,8 @@ const SingleTrainer = () => {
               <Image
                 src={katerina}
                 alt="trainer"
+                placeholder="blur"
+                priority
                 className="w-full md:w-auto  min-h-[440px] max-h-[600px] object-cover hover:scale-105 duration-200"
                 width={465}
                 height={465}

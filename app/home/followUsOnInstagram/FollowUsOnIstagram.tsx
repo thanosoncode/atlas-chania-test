@@ -88,6 +88,7 @@ const FollowUsOnInstagram = () => {
                   alt=""
                   className="object-cover"
                   fill
+                  placeholder="blur"
                   sizes="(min-width: 1320px) 183px, (min-width: 980px) calc(13.13vw + 12px), (min-width: 740px) calc(25vw - 23px), calc(23.81vw - 8px)"
                 />
               </div>

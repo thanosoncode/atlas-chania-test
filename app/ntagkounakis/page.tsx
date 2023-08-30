@@ -39,6 +39,8 @@ const SingleTrainer = () => {
                 className="w-full md:w-auto  min-h-[440px] object-cover hover:scale-105 duration-200 h-full"
                 width={465}
                 height={465}
+                priority
+                placeholder="blur"
               />
             </div>
             <div className="pt-4 sm:pt-8 md:pt-0 w-full md:w-[48%] self-start">
