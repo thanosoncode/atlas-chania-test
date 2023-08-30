@@ -28,6 +28,11 @@ export async function generateMetadata({
   };
 }
 
+export const generateStaticParams = async () => {
+  const posts = await prisma.post.findMany();
+  return posts.map((post) => ({ id: post.id }));
+};
+
 const Post = async ({ params: { id } }: { params: { id: string } }) => {
   const post = await prisma.post.findFirst({
     where: { id },

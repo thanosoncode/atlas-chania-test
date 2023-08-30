@@ -10,9 +10,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Open Gym",
   description:
-    "Αυξήστε τη μυϊκή μάζα στο Atlas Chania. Οτι χρειαζεστε από μηχανήματα για να πετύχετε τους στόχους σας είναι εδώ",
+    "Προπόνηση με τελευταίας τεχνολογίας μηχανήματα στο Atlas Chania. Αυξήστε τη μυϊκή μάζα και βελτιώστε τα νούμερά σας στο powerlifing και στην άρση βαρών στο Atlas Chania. Οτι χρειαζεστε από μηχανήματα για να πετύχετε τους στόχους σας είναι εδώ",
   keywords:
-    "Atlas Chania, γυμναστήριο, Χανιά, Κρήτη, άρση βαρών, weightlifting, clean & jerk, CrossFit, εθνική ομάδα, αθλητές, powerlifting, μηχανήματα, Γιαννης Νταγκουνακης",
+    "Atlas Chania, γυμναστήριο, Χανιά, Κρήτη, Γιαννης Νταγκουνακης, προπόνηση με μηχανήματα, άρση βαρών, weightlifting, CrossFit, powerlifting, πρόγραμμα γυμναστικής, συμβουλές διατροφής",
 };
 
 const OpenGym = () => {

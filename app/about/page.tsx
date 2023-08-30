@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   description:
     "Μάθετε την ιστορία πίσω από το γυμναστήριο Atlas Chania τις αξίες του, τις εγκαταστάσεις του και για τη δέσμευσή του για προσαρμοσμένη εκπαίδευση. Επισκεφτείτε μας σήμερα στα Χανιά, Ελλάδα.",
   keywords:
-    "Atlas Chania, γυμναστήριο, Χανιά, Κρήτη, άρση βαρών, weightlifting, clean & jerk, CrossFit, εθνική ομάδα, αθλητές, powerlifting, μηχανήματα, Γιαννης Νταγκουνακης",
+    "Atlas Chania, γυμναστήριο, Χανιά, Κρήτη, άρση βαρών, weightlifting, clean & jerk, CrossFit, εθνική ομάδα, αθλητές, powerlifting, μηχανήματα, Γιαννης Νταγκουνακης, Πασακάκι",
 };
 
 const About = () => {

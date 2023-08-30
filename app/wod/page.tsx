@@ -12,8 +12,10 @@ export async function generateMetadata(): Promise<Metadata> {
   });
 
   return {
-    title: allWods[0].wodTitle,
+    title: `WOD: ${allWods[0].wodTitle}`,
     description: allWods[0].wodPlainText,
+    keywords:
+      "Workout of the day, WOD Atlas Chania, Atlas Chania, γυμναστήριο, Χανιά, Κρήτη, Γιαννης Νταγκουνακης, προπόνηση με μηχανήματα, άρση βαρών, weightlifting, CrossFit, powerlifting, πρόγραμμα γυμναστικής, συμβουλές διατροφής",
   };
 }
 
