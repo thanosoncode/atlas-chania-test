@@ -14,7 +14,8 @@ const inter = Inter({ subsets: ["latin", "greek"] });
 
 export const metadata = {
   title: "Atlas Chania",
-  description: "Crossfit, Weightlifting and Powerlifting Gym In Chania",
+  description:
+    "Crossfit, Weightlifting and Powerlifting γυμναστήριο στα Χανιά. Ολοκληρωμένη προπόνηση, προετοιμασία για αγώνες, προγράμματα γυμναστικής, συμβουλές διατροφής, άρθρα. Κατέκτησε το στόχους σου στο γυμναστήριο Άτλας Χανιά",
   keywords:
     "Atlas Chania, γυμναστήριο, Χανιά, Κρήτη, άρση βαρών, weightlifting, clean & jerk, CrossFit, εθνική ομάδα, αθλητές, powerlifting, μηχανήματα, Γιαννης Νταγκουνακης, οικονομικό, φθηνό, το καλυτερο γυμναστηριο στσ Χανιά, οι καλυτεροι προπονητές στα Χανιά, συμβουλές διατροφής, πρόγραμμα γυμναστικής, πρόγραμμα ενδυνάμωσης",
 };
