@@ -1,6 +1,6 @@
 import Image from "next/image";
 import katerina from "../../public/katerina.jpg";
-import john from "../../public/john-atlas.jpeg";
+import john from "../../public/john-atlas.jpg";
 import { BsInstagram } from "react-icons/bs";
 import { FiFacebook } from "react-icons/fi";
 import { MotionWrapper } from "../components/motionWrapper/MotionWrapper";

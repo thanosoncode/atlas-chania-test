@@ -1,8 +1,8 @@
 import Image from "next/image";
-import back from "../../public/back.jpeg";
-import assaults from "../../public/assaults.jpeg";
-import angle from "../../public/angle.jpeg";
-import location from "../../public/location.jpeg";
+import back from "../../public/instagram/back.jpg";
+import assaults from "../../public/instagram/assaults.jpg";
+import angle from "../../public/angle.jpg";
+import location from "../../public/location.jpg";
 import { PlayButton, PlayButtonMobile } from "../components/svgs/PlayButton";
 import Passion from "../components/svgs/Passion";
 import Community from "../components/svgs/Community";

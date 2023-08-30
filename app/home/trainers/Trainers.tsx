@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ShadowHeading from "../../components/shadowHeading/ShadowHeading";
-import johnAtlas from "../../../public/john-atlas.jpeg";
+import johnAtlas from "../../../public/john-atlas.jpg";
 import katerina from "../../../public/katerina.jpg";
 import Link from "next/link";
 import "./Trainers.css";

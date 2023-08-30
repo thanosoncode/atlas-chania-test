@@ -3,15 +3,15 @@
 import Image from "next/image";
 import ShadowHeading from "../../components/shadowHeading/ShadowHeading";
 import "./FollowUsOnInstagram.css";
-import item1 from "../../../public/koritsaki-2.jpeg";
-import item2 from "../../../public/instagram/assaults.jpeg";
-import item3 from "../../../public/instagram/bars.jpeg";
-import item4 from "../../../public/instagram/back.jpeg";
-import item5 from "../../../public/instagram/dumbells-better.jpeg";
-import item6 from "../../../public/instagram/wall.jpeg";
-import item7 from "../../../public/instagram/machines.jpeg";
-import item8 from "../../../public/instagram/rows.jpeg";
-import main from "../../../public/koritsaki-1.jpeg";
+import item1 from "../../../public/koritsaki-2.jpg";
+import item2 from "../../../public/instagram/assaults.jpg";
+import item3 from "../../../public/instagram/bars.jpg";
+import item4 from "../../../public/instagram/back.jpg";
+import item5 from "../../../public/instagram/dumbells-better.jpg";
+import item6 from "../../../public/instagram/wall.jpg";
+import item7 from "../../../public/instagram/machines.jpg";
+import item8 from "../../../public/instagram/rows.jpg";
+import main from "../../../public/koritsaki-1.jpg";
 import Modal from "./Modal";
 import { useState } from "react";
 
@@ -71,6 +71,7 @@ const FollowUsOnInstagram = () => {
                   src={item.src}
                   alt=""
                   fill
+                  placeholder="blur"
                   className="object-cover"
                   sizes="(min-width: 1320px) 387px, (min-width: 980px) calc(26.25vw + 46px), calc(48.79vw - 14px)"
                 />

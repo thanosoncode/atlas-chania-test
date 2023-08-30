@@ -1,5 +1,5 @@
 import Image from "next/image";
-import johnAtlas from "../../public/john-atlas.jpeg";
+import johnAtlas from "../../public/john-atlas.jpg";
 import { BsInstagram } from "react-icons/bs";
 import { FiFacebook } from "react-icons/fi";
 import { MotionWrapper } from "../components/motionWrapper/MotionWrapper";

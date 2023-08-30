@@ -3,7 +3,7 @@ import { MdOutlineLocationOn } from "react-icons/md";
 import { AiOutlineMail } from "react-icons/ai";
 
 import Image from "next/image";
-import koritsaki from "../../../public/koritsaki-2.jpeg";
+import koritsaki from "../../../public/koritsaki-2.jpg";
 import MotionHeader from "./MotionHeader";
 
 const Hero = () => {
@@ -22,8 +22,9 @@ const Hero = () => {
               src={koritsaki}
               alt="hero"
               fill
+              placeholder="blur"
               className="object-cover object-top"
-              priority={true}
+              priority
               sizes="100vw"
             />
           </div>
