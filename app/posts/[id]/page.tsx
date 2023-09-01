@@ -28,11 +28,6 @@ export async function generateMetadata({
   };
 }
 
-export const generateStaticParams = async () => {
-  const posts = await prisma.post.findMany();
-  return posts.map((post) => ({ id: post.id }));
-};
-
 const Post = async ({ params: { id } }: { params: { id: string } }) => {
   const post = await prisma.post.findFirst({
     where: { id },
@@ -50,8 +45,8 @@ const Post = async ({ params: { id } }: { params: { id: string } }) => {
 
   return (
     <MotionWrapper>
-      <div className="pt-20 relative w-full px-4 lg:w-[900px] mx-auto flex flex-col overflow-y-hidden">
-        <div className=" relative overflow-y-hidden mb-20 overflow-x-hidden flex flex-col gap-10">
+      <div className="pt-20 pb-12 relative w-full px-4 lg:w-[900px] mx-auto flex flex-col overflow-y-hidden">
+        <div className=" relative overflow-y-hidden mb-12 overflow-x-hidden flex flex-col gap-10">
           <h1 className="text-3xl sm:text-5xl  font-extrabold mt-4 sm:mt-24 ">
             {post.title}
           </h1>

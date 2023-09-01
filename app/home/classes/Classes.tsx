@@ -6,6 +6,7 @@ import crossfit from "../../../public/crossfit-m.jpg";
 import Link from "next/link";
 import "./Classes.css";
 import ShadowHeadingBlack from "@/app/components/shadowHeading/ShadowHeadingBlack";
+import SingleClass from "./SingleClass";
 
 const Classes = () => {
   return (
@@ -38,87 +39,31 @@ const Classes = () => {
       </div>
       <div className="pt-[140px] md:pt-[240px] lg:pt-[280px] px-4 ">
         <div className="grid-container-classes">
-          <Link href="/weightlifting" className="w-full h-full block">
-            <div className="relative w-full  h-[70%] overflow-hidden">
-              <Image
-                src={weightlifting}
-                alt="class-1"
-                className="hover:scale-105 duration-200 object-cover"
-                fill
-                placeholder="blur"
-                sizes="(min-width: 1320px) 584px, (min-width: 860px) calc(42.27vw + 34px), (min-width: 400px) calc(100vw - 32px), calc(28.75vw + 239px)"
-              />
-            </div>
-            <div className="text-neutral-400 mt-2 ">
-              <h3 className="text-3xl text-white font-bold   tracking-wide uppercase">
-                Olympic Weightlifting
-              </h3>
-              <p className="text-base sm:text-lg  block  font-semibold tracking-wide text-neutral-300 mb-1 md:mb-2">
-                Ο &quot;πατέρας&quot; των αθλημάτων της ισχύος
-              </p>
-            </div>
-          </Link>
-          <Link href="/powerlifting" className="w-full h-full block ">
-            <div className="relative w-full  h-[70%] overflow-hidden">
-              <Image
-                src={powerlifting}
-                alt="class-1"
-                className="hover:scale-105 duration-200 object-cover"
-                fill
-                placeholder="blur"
-                sizes="(min-width: 1320px) 584px, (min-width: 860px) calc(42.27vw + 34px), (min-width: 400px) calc(100vw - 32px), calc(28.75vw + 239px)"
-              />
-            </div>
-            <div className="text-neutral-400 mt-2 ">
-              <h3 className="text-3xl text-white font-bold tracking-wide uppercase">
-                Powerlifting
-              </h3>
-              <p className="text-base sm:text-lg  block  font-semibold tracking-wide text-neutral-300 mb-1 md:mb-2">
-                Μάθε την τέχνη του powerlifting και εκτόξευσε την δύναμή σου
-              </p>
-            </div>
-          </Link>
-          <Link href="/crossfit" className="w-full h-full block">
-            <div className="relative w-full  h-[70%] overflow-hidden">
-              <Image
-                src={crossfit}
-                alt="class-1"
-                className="hover:scale-105 duration-200 object-cover"
-                fill
-                placeholder="blur"
-                sizes="(min-width: 1320px) 584px, (min-width: 860px) calc(42.27vw + 34px), (min-width: 400px) calc(100vw - 32px), calc(28.75vw + 239px)"
-              />
-            </div>
-            <div className="text-neutral-400 mt-2 ">
-              <h3 className="text-3xl text-white uppercase font-bold tracking-wide">
-                Crossfit
-              </h3>
-              <p className="text-base sm:text-lg block  font-semibold tracking-wide text-neutral-300 mb-1 md:mb-2">
-                Γυμνάσε ολοκληρωμένα το σώμα σου και σε σύντομο χρονικό διάστημα
-              </p>
-            </div>
-          </Link>
-          <Link href="/opengym" className="w-full h-full block">
-            <div className="relative w-full  h-[70%] overflow-hidden">
-              <Image
-                src={opengym}
-                alt="class-1"
-                className="hover:scale-105 duration-200 object-cover"
-                fill
-                placeholder="blur"
-                sizes="(min-width: 1320px) 584px, (min-width: 860px) calc(42.27vw + 34px), (min-width: 400px) calc(100vw - 32px), calc(28.75vw + 239px)"
-              />
-            </div>
-            <div className="text-neutral-400 mt-2 ">
-              <h3 className="text-3xl text-white font-bold  tracking-wide uppercase">
-                Open gym
-              </h3>
-              <p className="text-base sm:text-lg  block  font-semibold tracking-wide text-neutral-300 mb-1 md:mb-2">
-                Ενισχύστε την προπόνηση σας με μηχανήματα για αύξηση μυικής
-                μάζας και για βελτίωση των main lifts
-              </p>
-            </div>
-          </Link>
+          <SingleClass
+            title="Olympic Weightlifting"
+            subtitle="Ο πατέρας των αθλημάτων ισχύος"
+            image={weightlifting}
+            href="/weightlifting"
+          />
+          <SingleClass
+            title="Powerlifting"
+            subtitle="Μάθε την τέχνη του powerlifting και εκτόξευσε την δύναμή σου"
+            image={powerlifting}
+            href="/powerlifting"
+          />
+          <SingleClass
+            title="Crossfit"
+            subtitle="Γυμνάσε ολοκληρωμένα το σώμα σου και σε σύντομο χρονικό διάστημα"
+            image={crossfit}
+            href="/crossfit"
+          />
+          <SingleClass
+            title="Open gym"
+            subtitle="Ενίσχυσαι την προπόνηση σου με μηχανήματα για αύξηση μυικής
+            μάζας και για βελτίωση των main lifts"
+            image={opengym}
+            href="/opengym"
+          />
         </div>
         <div className="flex gap-12 mt-16 w-full">
           <Link

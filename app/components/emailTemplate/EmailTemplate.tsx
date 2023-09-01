@@ -11,10 +11,10 @@ const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
 }) => (
   <div>
     <p>
-      <span className="font-bold">Hello John!</span>
+      <span className="font-bold">Νεο μήνυμα!</span>
     </p>
     <div>
-      To <span className="text-bold">{email}</span> σου έστειλε το παρακάτω
+      To <span className="text-bold mb-4">{email}</span> έστειλε το παρακάτω
       μήνυμα:
     </div>
     <div>{message}</div>

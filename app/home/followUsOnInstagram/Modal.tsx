@@ -5,12 +5,7 @@ import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import Image, { StaticImageData } from "next/image";
 import { FaXmark } from "react-icons/fa6";
 
-const Modal = ({
-  startIndex,
-  open,
-  onClose,
-  images,
-}: {
+interface ModalProps {
   startIndex: number;
   open: boolean;
   onClose: () => void;
@@ -20,7 +15,9 @@ const Modal = ({
     isMain: boolean;
     name: string;
   }[];
-}) => {
+}
+
+const Modal: React.FC<ModalProps> = ({ startIndex, open, onClose, images }) => {
   const [index, setIndex] = useState(startIndex);
   const handleNextImageClick = () => {
     setIndex((prev) => (prev < images.length - 1 ? prev + 1 : 0));

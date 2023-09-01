@@ -1,7 +1,6 @@
 import { BiTime } from "react-icons/bi";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { AiOutlineMail } from "react-icons/ai";
-
 import Image from "next/image";
 import koritsaki from "../../../public/koritsaki-2.jpg";
 import MotionHeader from "./MotionHeader";

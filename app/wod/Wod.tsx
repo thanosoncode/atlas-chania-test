@@ -9,7 +9,6 @@ import wodBg from "../../public/wod-bg.jpg";
 import Chevron from "../components/svgs/Chevron";
 import { motion } from "framer-motion";
 import { Session } from "../admin/page";
-import { AiOutlineDelete } from "react-icons/ai";
 import DeleteButton from "./deleteButton/DeleteButton";
 
 const wodVariants = {

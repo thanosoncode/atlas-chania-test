@@ -1,8 +1,5 @@
-import Chevron from "@/app/components/svgs/Chevron";
 import Image from "next/image";
 import Link from "next/link";
-import { getServerSession } from "next-auth";
-import { BiSolidChevronRight } from "react-icons/bi";
 
 interface PostCardProps {
   image: string;
@@ -35,14 +32,11 @@ const PostCard: React.FC<PostCardProps> = ({ image, title, id, createdAt }) => {
           <p className="text-sm font-bold">{month.slice(0, 3)}</p>
         </div>
       </Link>
-      <Link href={`/posts/${id}`} className="px-2">
-        <h4 className="text-xl font-bold text-white -mt-4 ">{title}</h4>
-        {/* <Link href={`/posts/${id}`} className="flex gap-1.5 ">
-          <h4 className=" text-base font-bold text-white tracking-wider hover:text-red-500 duration-200 flex">
-            <span>Διάβασε περισσότερα</span>
-            <BiSolidChevronRight size={"24px"} />
-          </h4>
-        </Link> */}
+      <Link
+        href={`/posts/${id}`}
+        className="px-2 text-xl font-bold text-white block mt-1 sm:mt-2"
+      >
+        {title}
       </Link>
     </div>
   );

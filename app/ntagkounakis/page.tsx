@@ -22,7 +22,7 @@ const SingleTrainer = () => {
       <div className="pt-6 sm:pt-12 md:pt-28 pb-20">
         <div className="w-full xl:w-[1200px] mx-auto relative overflow-y-hidden px-4">
           <p
-            className="md:block hidden uppercase text-white font-extrabold absolute  pb-96 top-32 right-0 -z-10"
+            className="md:block hidden uppercase text-white font-extrabold absolute  pb-96 top-24 right-0 -z-10"
             style={{
               fontSize: 180,
               textShadow:
@@ -31,7 +31,7 @@ const SingleTrainer = () => {
           >
             trainer
           </p>
-          <div className="flex gap-2 sm:gap-6  pt-16 sm:pt-24 px-0 lg:px-14  items-center md:flex-row flex-col">
+          <div className="flex gap-2 sm:gap-6  pt-16 sm:pt-28 px-0 lg:px-14  items-center md:flex-row flex-col">
             <div className="relative w-full md:w-[48%] h-full px-0 sm:px-6 md:px-0 overflow-hidden">
               <Image
                 src={johnAtlas}
