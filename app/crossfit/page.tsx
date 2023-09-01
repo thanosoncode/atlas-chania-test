@@ -6,6 +6,7 @@ import { BiSolidCircle } from "react-icons/bi";
 import MoreStylesCard from "../components/moreStylesCard/MoreStylesCard";
 import { MotionWrapper } from "../components/motionWrapper/MotionWrapper";
 import { Metadata } from "next";
+import weightlifting from "../../public/weightlifting.jpg";
 
 export const metadata: Metadata = {
   title: "Crossfit",
@@ -124,19 +125,25 @@ const Crossfit = () => {
           <h4 className="text-2xl font-bold uppercase sm:text-4xl text-neutral-900 mb-6">
             Περισσοτερα αθληματα
           </h4>
-          <div className="flex gap-12 md:flex-row flex-col">
+          <div className="flex gap-12 sm:gap-4 lg:gap-12 md:flex-row flex-col">
             <MoreStylesCard
-              title="Open gym"
-              subtitle="Ενισχύστε την προπόνηση σας με μηχανήματα για αύξηση μυικής
-                μάζας και για βελτίωση των main lifts"
-              href="/opengym"
-              image={opengym}
+              title="Weightlifting"
+              subtitle='Ο "πατέρας" των αθλημάτων της ισχύος'
+              href="/weightlifting"
+              image={weightlifting}
             />
             <MoreStylesCard
               title="Powerlifting"
               subtitle="Μάθε την τέχνη του powerlifting και εκτόξευσε την δύναμή σου"
               href="/powerlifting"
               image={powerlifting}
+            />
+            <MoreStylesCard
+              title="Open gym"
+              subtitle="Ενισχύστε την προπόνηση σας με μηχανήματα για αύξηση μυικής
+                μάζας και για βελτίωση των main lifts"
+              href="/opengym"
+              image={opengym}
             />
           </div>
         </div>

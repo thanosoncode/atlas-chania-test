@@ -6,6 +6,7 @@ import weightlifting from "../../public/weightlifting.jpg";
 import MoreStylesCard from "../components/moreStylesCard/MoreStylesCard";
 import { MotionWrapper } from "../components/motionWrapper/MotionWrapper";
 import { Metadata } from "next";
+import powerlifting from "../../public/powerlifting.jpg";
 
 export const metadata: Metadata = {
   title: "Open Gym",
@@ -113,7 +114,7 @@ const OpenGym = () => {
           <h4 className="text-2xl font-bold uppercase sm:text-4xl text-neutral-900 mb-6">
             Περισσοτερα αθληματα
           </h4>
-          <div className="flex gap-12 md:flex-row flex-col">
+          <div className="flex gap-12 sm:gap-4 lg:gap-12 md:flex-row flex-col">
             <MoreStylesCard
               title="Crossfit"
               subtitle="Γυμνάσε ολοκληρωμένα το σώμα σου και σε σύντομο χρονικό διάστημα"
@@ -125,6 +126,12 @@ const OpenGym = () => {
               subtitle='Ο "πατέρας" των αθλημάτων της ισχύος'
               href="/weightlifting"
               image={weightlifting}
+            />
+            <MoreStylesCard
+              title="Powerlifting"
+              subtitle="Μάθε την τέχνη του powerlifting και εκτόξευσε την δύναμή σου"
+              href="/powerlifting"
+              image={powerlifting}
             />
           </div>
         </div>
