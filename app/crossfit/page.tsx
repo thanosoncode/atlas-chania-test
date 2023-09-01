@@ -19,7 +19,7 @@ const Crossfit = () => {
   return (
     <MotionWrapper>
       <div className="pt-4 sm:pt-16 relative pb-20 ">
-        <div className="w-full px-4 xl:w-[1200px] mx-auto relative overflow-y-hidden mb-16">
+        <div className="w-full px-4 xl:w-[1200px] mx-auto relative overflow-y-hidden mb-8">
           <h1 className="uppercase text-4xl sm:text-7xl  font-extrabold mt-24">
             crossfit
           </h1>
@@ -120,7 +120,7 @@ const Crossfit = () => {
             </div>
           </div>
         </div>
-        <div className="w-full px-4 xl:w-[1200px] mx-auto pt-24">
+        <div className="w-full px-4 xl:w-[1200px] mx-auto pt-12">
           <h4 className="text-2xl font-bold uppercase sm:text-4xl text-neutral-900 mb-6">
             Περισσοτερα αθληματα
           </h4>

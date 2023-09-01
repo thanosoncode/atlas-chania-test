@@ -19,7 +19,7 @@ const Powerlifting = () => {
   return (
     <MotionWrapper>
       <div className="pt-4 sm:pt-16 relative pb-20 ">
-        <div className="w-full px-4 xl:w-[1200px] mx-auto relative overflow-y-hidden mb-16">
+        <div className="w-full px-4 xl:w-[1200px] mx-auto relative overflow-y-hidden mb-8">
           <h1 className="uppercase text-4xl sm:text-7xl  font-extrabold mt-24">
             powerlifting
           </h1>
@@ -83,7 +83,7 @@ const Powerlifting = () => {
             </p>
           </div>
         </div>
-        <div className="px-4 w-full xl:w-[1200px] mx-auto pt-20">
+        <div className="px-4 w-full xl:w-[1200px] mx-auto pt-12">
           <h4 className="text-2xl font-bold uppercase sm:text-4xl text-neutral-900 mb-6">
             Περισσοτερα αθληματα
           </h4>

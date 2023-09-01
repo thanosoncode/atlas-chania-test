@@ -4,13 +4,13 @@ import MotionImageTest from "./MotionImagesTest";
 const AboutUs = () => {
   return (
     <div className="relative ">
-      <div className="flex justify-center items-center pt-24 sm:pt-48 flex-col w-full px-4">
+      <div className="flex justify-center items-center pt-24 sm:pt-32 flex-col w-full px-4">
         <div>
           <div className="hidden lg:flex w-full h-full justify-center  ">
-            <ShadowHeading title="about us" top="top-12" />
+            <ShadowHeading title="about us" top="top-0" />
           </div>
           <div className="hidden md:flex lg:hidden w-full h-full justify-center  ">
-            <ShadowHeading title="about us" top="top-24" size={150} />
+            <ShadowHeading title="about us" top="top-12" size={150} />
           </div>
           <h1 className="flex gap-1 flex-col items-center text-5xl lg:text-7xl font-extrabold mb-8 duration-200 delay-100">
             <span className="text-center">WE ARE NOT JUST A GYM</span>
