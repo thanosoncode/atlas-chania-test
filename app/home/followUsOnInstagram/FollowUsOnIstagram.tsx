@@ -48,12 +48,12 @@ const FollowUsOnInstagram = () => {
           <ShadowHeading title="instagram" top="top-24" size={150} />
         </div>
       </div>
-      <div className="pt-16 md:pt-48 px-4">
+      <div className="pt-8 md:pt-48 px-4">
         <a
           href="https://www.instagram.com/johnatlas_elitefitness/?hl=el"
           target="_blank"
           rel="noopener noreferrer"
-          className="uppercase  text-5xl sm:text-7xl  font-extrabold flex flex-col gap-2 justify-center items-center mb-10 sm:mb-20 hover:underline"
+          className="uppercase  text-4xl sm:text-7xl  font-extrabold flex flex-col gap-2 justify-center items-center mb-10 sm:mb-20 hover:underline"
         >
           <span className="text-center">follow us</span>
           <span className="text-center">on instagram</span>

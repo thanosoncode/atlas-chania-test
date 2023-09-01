@@ -69,11 +69,11 @@ const Questions = () => {
   return (
     <div className="bg-neutral-900 pb-20">
       <div className="w-full xl:w-[1200px] mx-auto relative pb-16 sm:pb-80 lg:pb-[400px] px-4">
-        <div className="text-5xl lg:text-7xl hidden sm:flex whitespace-nowrap font-extrabold uppercase text-white absolute z-20 top-[140px]  lg:top-[190px]  justify-between items-center w-full flex-col">
+        <div className="text-4xl lg:text-7xl hidden sm:flex whitespace-nowrap font-extrabold uppercase text-white absolute z-20 top-[140px]  lg:top-[190px]  justify-between items-center w-full flex-col">
           <span> FREQUENTLY ASKED</span>
           <span>QUESTIONS</span>
         </div>
-        <h4 className="block sm:hidden text-5xl font-extrabold uppercase text-white text-center">
+        <h4 className="block sm:hidden text-4xl font-extrabold uppercase text-white text-center">
           FREQUENTLY ASKED QUESTIONS
         </h4>
         <div

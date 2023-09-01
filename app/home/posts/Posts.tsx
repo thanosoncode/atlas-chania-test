@@ -13,8 +13,8 @@ const Posts = async () => {
     <>
       <div className="bg-neutral-900 pb-[60px] sm:pb-28  w-screen">
         <div className="w-full lg:w-[1200px] relative mx-auto px-6">
-          <div className="top-[70px] sm:top-52 text-white absolute z-20 flex justify-center sm:justify-between inset-0 items-center w-full">
-            <h4 className="text-5xl sm:text-7xl uppercase text-center font-extrabold lg:whitespace-nowrap px-6">
+          <div className="top-[60px] sm:top-52 text-white absolute z-20 flex justify-center sm:justify-between inset-0 items-center w-full">
+            <h4 className="text-4xl sm:text-7xl uppercase text-center font-extrabold lg:whitespace-nowrap px-6">
               αρθρα &amp; νεα
             </h4>
           </div>
@@ -28,7 +28,7 @@ const Posts = async () => {
           </div>
         </div>
       </div>
-      <div className="bg-neutral-900 pt-20 sm:pt-48  sm:pb-12  pb-20">
+      <div className="bg-neutral-900 pt-12 sm:pt-48  sm:pb-12  pb-20">
         <div className="px-4">
           <div className="grid-container-classes mx-auto ">
             {sortedPosts.slice(0, 4).map((post) => (

@@ -13,7 +13,7 @@ const Trainers = () => {
         <ShadowHeading title="trainers" top="top-12" size={150} />
       </div>
       <div className="pt-12 sm:pb-10 md:pt-40">
-        <h4 className="uppercase text-5xl md:text-7xl  font-extrabold flex flex-col gap-2 justify-center items-center text-center">
+        <h4 className="uppercase text-4xl md:text-7xl  font-extrabold flex flex-col gap-2 justify-center items-center text-center">
           προπονητες
         </h4>
         <div className="flex w-full xl:w-[1200px] mx-auto sm:flex-row flex-col pt-8 gap-6 lg:gap-12">

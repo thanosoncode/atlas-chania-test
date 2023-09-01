@@ -27,7 +27,7 @@ const SingleClass: React.FC<SingleClassProps> = ({
         />
       </div>
       <div className="text-neutral-400 mt-2 ">
-        <h3 className="text-3xl text-white uppercase font-bold tracking-wide">
+        <h3 className="text-2xl text-white uppercase font-bold tracking-wide">
           {title}
         </h3>
         <p className="text-base sm:text-lg block  font-semibold tracking-wide text-neutral-300 mb-1 md:mb-2">
