@@ -1,24 +1,24 @@
-import Hero from "./home/hero/Hero";
-import AboutUs from "./home/aboutUs/AboutUs";
-import Classes from "./home/classes/Classes";
-import Trainers from "./home/trainers/Trainers";
-import Posts from "./home/posts/Posts";
-import FollowUsOnIstagram from "./home/followUsOnInstagram/FollowUsOnIstagram";
-import Questions from "./contact/questions/Questions";
-import { MotionWrapper } from "./components/motionWrapper/MotionWrapper";
+import Hero from "./(routes)/home/hero/Hero";
+import AboutUs from "./(routes)/home/aboutUs/AboutUs";
+import Sports from "./(routes)/home/sports/Sports";
+import Trainers from "./(routes)/home/trainers/Trainers";
+import Posts from "./(routes)/home/posts/Posts";
+import FollowUsOnIstagram from "./(routes)/home/followUsOnInstagram/FollowUsOnIstagram";
+import Questions from "./(routes)/home/questions/Questions";
+import { MotionPageWrapper } from "./components/motionWrapper/MotionPageWrapper";
 
 const HomePage = () => {
   return (
     <div className="relative">
-      <MotionWrapper>
+      <MotionPageWrapper>
         <Hero />
         <AboutUs />
-        <Classes />
+        <Sports />
         <Trainers />
         <Posts />
         <Questions />
         <FollowUsOnIstagram />
-      </MotionWrapper>
+      </MotionPageWrapper>
     </div>
   );
 };

@@ -1,14 +1,14 @@
 import Head from "next/head";
 import Footer from "./components/footer/Footer";
-import { MotionWrapper } from "./components/motionWrapper/MotionWrapper";
+import { MotionPageWrapper } from "./components/motionWrapper/MotionPageWrapper";
 import Navbar from "./components/navbar/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import NextAuthProvider from "./components/nextAuthProvider/SessionProvider";
-import ToastProvider from "./components/toastProvider/ToastProvider";
+import NextAuthProvider from "./context/SessionProvider";
+import ToastProvider from "./context/ToastProvider";
 import { getServerSession } from "next-auth";
-import { Session } from "./admin/page";
 import Script from "next/script";
+import { Session } from "./utils/types";
 
 const inter = Inter({ subsets: ["latin", "greek"] });
 
@@ -53,7 +53,7 @@ export default async function RootLayout({
             <Navbar session={session} />
           </div>
           <div className="overflow-x-hidden  min-h-[calc(100vh-234px)] sm:min-h-[calc(100vh-294px)]">
-            <MotionWrapper>{children}</MotionWrapper>
+            <MotionPageWrapper>{children}</MotionPageWrapper>
           </div>
           <Footer />
         </NextAuthProvider>

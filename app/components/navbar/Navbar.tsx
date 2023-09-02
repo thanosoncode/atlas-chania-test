@@ -3,9 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo2 from "../../../public/logo.jpeg";
-import Menu from "../menu/Menu";
+import Menu from "./Menu";
 import { useEffect, useRef, useState } from "react";
-import { Session } from "@/app/admin/page";
+import { Session } from "../../utils/types";
 
 const links = [
   { name: "αρχικη", href: "/" },
