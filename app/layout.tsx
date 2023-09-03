@@ -30,6 +30,7 @@ export default async function RootLayout({
   return (
     <html lang="el">
       <Head>
+        <link rel="canonical" href="https://www.atlaschania.gr/" />
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-LEYWPPLYS8"
