@@ -86,14 +86,20 @@ const Wod = ({
           </div>
           <div className="border-2 py-4 px-4 sm:px-16 border-white mt-12 w-full md:w-auto">
             <div className="flex gap-4 mt-8">
-              <div>
-                <Quotes />
+              <div className="hidden sm:block">
+                <Quotes size="32px" />
               </div>
-              <div className="text-6xl sm:text-7xl font-bold">
+              <div className="block sm:hidden">
+                <Quotes size="28px" />
+              </div>
+              <div className="text-5xl sm:text-7xl font-bold">
                 {currentWod.wodTitle}
               </div>
-              <div className="self-end rotate-180">
-                <Quotes />
+              <div className="self-end rotate-180 hidden sm:block">
+                <Quotes size="32px" />
+              </div>
+              <div className="self-end rotate-180 block sm:hidden">
+                <Quotes size="28px" />
               </div>
             </div>
 

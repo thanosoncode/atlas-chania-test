@@ -114,8 +114,7 @@ const Post = async ({ params: { id } }: { params: { id: string } }) => {
                 Atlas Chania
               </p>
               <p className="text-base sm:text-lg">
-                &#34;Be the best, not just better... and eat your protein ρε
-                συυυ!&#34;
+                Be the best, not just better!
               </p>
             </div>
           </div>

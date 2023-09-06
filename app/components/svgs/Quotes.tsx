@@ -1,10 +1,10 @@
-const Quotes = () => {
+const Quotes = ({ size }: { size: string }) => {
   return (
     <svg
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
-      width="32px"
-      height="32px"
+      width={size}
+      height={size}
       viewBox="0 0 200.000000 200.000000"
       preserveAspectRatio="xMidYMid meet"
     >

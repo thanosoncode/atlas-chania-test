@@ -116,8 +116,9 @@ const About = () => {
           our facilities
         </h4>
         <p className="leading-7 text-neutral-700 text-lg  w-full md:w-4/5 xl:w-1/2 mb-12 text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo
-          sociis morbi sed sagittis consectetur in quisque placerat enim. Vitae.
+          Μετά την ανακαίνιση του καλοκαιριού του 2023 στο γυμναστήριο υπάρχουν
+          ξεχωριστοί χώροι crossfit, άρσης βαρών, conditioning και μηχανημάτων
+          καθώς και τελευταίας τεχνολογίας εξοπλισμος.
         </p>
         <div className="w-full  relative">
           <Image
