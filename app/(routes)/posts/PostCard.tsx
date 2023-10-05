@@ -29,7 +29,7 @@ const PostCard: React.FC<PostCardProps> = async ({
       {session ? <DeleteButton id={id} /> : null}
       <Link
         href={`/posts/${id}`}
-        className="block relative w-full h-[300px] overflow-hidden shadow-[1px_1px_10px_2px_rgba(0,0,0,0.2)]"
+        className="block relative w-full h-[260px] sm:h-[300px] overflow-hidden shadow-[1px_1px_10px_2px_rgba(0,0,0,0.2)]"
       >
         <Image
           src={image}

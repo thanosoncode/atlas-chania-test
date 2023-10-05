@@ -18,7 +18,7 @@ const PostCard: React.FC<PostCardProps> = ({ image, title, id, createdAt }) => {
     <div>
       <Link
         href={`/posts/${id}`}
-        className="block relative w-full h-[300px] overflow-hidden  shadow-grey"
+        className="block relative w-full h-[260px] sm:h-[300px]  overflow-hidden  shadow-grey"
       >
         <Image
           src={image}

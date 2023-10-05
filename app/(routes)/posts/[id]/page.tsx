@@ -47,7 +47,7 @@ const Post = async ({ params: { id } }: { params: { id: string } }) => {
     <MotionPageWrapper>
       <div className="pt-20 pb-12 relative w-full px-4 lg:w-[900px] mx-auto flex flex-col overflow-y-hidden">
         <div className=" relative overflow-y-hidden mb-12 overflow-x-hidden flex flex-col gap-10">
-          <h1 className="text-3xl sm:text-5xl  font-extrabold mt-4 sm:mt-24 ">
+          <h1 className="text-xl sm:text-5xl  font-bold mt-4 sm:mt-24 ">
             {post.title}
           </h1>
           <div className="flex gap-3 sm:gap-6 w-full ">
