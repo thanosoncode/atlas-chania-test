@@ -68,14 +68,14 @@ const Post = async ({ params: { id } }: { params: { id: string } }) => {
             </div>
           </div>
         </div>
-        <div className="relative overflow-y-hidden">
-          <div className="w-full ">
+        <div className="relative overflow-y-hidden shadow-[1px_1px_10px_2px_rgba(0,0,0,0.2)]">
+          <div className="w-full">
             <Image
               src={post?.image}
               alt="post-image"
               width={650}
               height={350}
-              className="w-full sm:h-[460px] h-[400px] object-cover"
+              className="w-full sm:h-[460px] h-[400px] object-contain"
               sizes="(min-width: 1280px) 876px, (min-width: 780px) 80vw, calc(100vw - 32px)"
             />
           </div>

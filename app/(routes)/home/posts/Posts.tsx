@@ -31,9 +31,12 @@ const Posts = async () => {
       </div>
       <div className="bg-neutral-900 pt-12 sm:pt-48  sm:pb-12  pb-20">
         <div className="px-4">
-          <div className="grid-container-classes mx-auto ">
+          <div className="flex gap-[24px] flex-wrap w-full justify-between">
             {sortedPosts.slice(0, 4).map((post) => (
-              <MotionItemWrapper key={post.id}>
+              <MotionItemWrapper
+                key={post.id}
+                classes="w-full sm:w-[48%] relative"
+              >
                 <PostCard
                   id={post.id}
                   image={post.image}

@@ -29,7 +29,7 @@ const Posts = async () => {
       <div className="pt-24 md:pt-36 pb-20">
         <div className="xl:w-[1200px] w-full px-4 mx-auto">
           <MotionTitle />
-          <div className="grid-container-articles mx-auto ">
+          <div className="flex gap-[24px] flex-wrap w-full justify-between">
             {sortedPosts.map((post) => (
               <PostCard
                 key={post.id}

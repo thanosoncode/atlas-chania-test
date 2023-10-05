@@ -5,9 +5,13 @@ import { useRef } from "react";
 
 interface MotionItemWrapperProps {
   children: React.ReactNode;
+  classes?: string;
 }
 
-const MotionItemWrapper: React.FC<MotionItemWrapperProps> = ({ children }) => {
+const MotionItemWrapper: React.FC<MotionItemWrapperProps> = ({
+  children,
+  classes,
+}) => {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: "100px" });
 
@@ -17,6 +21,7 @@ const MotionItemWrapper: React.FC<MotionItemWrapperProps> = ({ children }) => {
       animate={{ opacity: inView ? 1 : 0 }}
       transition={{ duration: 0.2, delay: 0.1 }}
       ref={ref}
+      className={classes}
     >
       {children}
     </motion.div>
