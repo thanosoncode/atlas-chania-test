@@ -14,10 +14,8 @@ const NewsletterEmailTemplate: React.FC<
 > = ({ blog, subId }) => (
   <div
     style={{
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
+      width: "380px",
+      margin: "0 auto",
     }}
   >
     <h1 style={{ fontSize: "22px", fontWeight: "normal" }}>
