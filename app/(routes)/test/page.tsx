@@ -6,13 +6,17 @@ import toast from "react-hot-toast";
 const Newsletter = () => {
   const [email, setEmail] = useState("");
   const [isConfirmEmailSent, setIsConfirmEmailSent] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsConfirmEmailSent(false);
-
+    setLoading(true);
     if (!isValidEmail(email)) {
       toast.error("Please enter a valid email");
+      setLoading(false);
+      setEmail("");
+      setIsConfirmEmailSent(false);
       return;
     }
     const response = await fetch("/api/confirmEmail", {
@@ -20,11 +24,26 @@ const Newsletter = () => {
       body: JSON.stringify({ email }),
     });
 
-    if (!response.ok) {
-      toast.error("Something went wrong. Try again later");
+    if (response.status === 409) {
+      toast.error("Αυτό το email υπάρχει ήδη στο newsletter");
+      setLoading(false);
+      setIsConfirmEmailSent(false);
+      setEmail("");
       return;
     }
-    setIsConfirmEmailSent(true);
+
+    if (response.status === 201) {
+      setIsConfirmEmailSent(true);
+      setLoading(false);
+      setEmail("");
+      return;
+    } else {
+      toast.error("Κάτι πήγε στραβά, δοκιμάστε αργότερα...");
+      setLoading(false);
+      setIsConfirmEmailSent(false);
+      setEmail("");
+      return;
+    }
   };
 
   return (
@@ -60,6 +79,14 @@ const Newsletter = () => {
             </p>
           </div>
         )}
+      </div>
+      <div className={`${loading ? "fixed" : "hidden"} z-40 inset-0`}>
+        <div className="bg-black  opacity-70 w-full h-full duration-300"></div>
+        <div className="flex justify-center items-center absolute inset-0">
+          <div className=" bg-white text-black flex justify-center items-center py-3 px-6 whitespace-nowrap">
+            Loading...
+          </div>
+        </div>
       </div>
     </div>
   );

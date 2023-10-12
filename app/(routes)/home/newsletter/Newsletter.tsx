@@ -10,7 +10,6 @@ const Newsletter = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsConfirmEmailSent(false);
-
     if (!isValidEmail(email)) {
       toast.error("Please enter a valid email");
       return;
@@ -32,14 +31,6 @@ const Newsletter = () => {
       toast.error("Κάτι πήγε στραβά, δοκιμάστε αργότερα...");
     }
   };
-
-  <div>
-    <h1 className="font-semibold">Στάλθηκε email επιβεβαίωσης!</h1>
-    <p className="w-1/2 text-center">
-      Πηγαίνετε στο email και κάντε click στο link που σας στείλαμε για
-      επιβεβαίωση
-    </p>
-  </div>;
 
   return (
     <div className="flex flex-col items-center gap-2 py-12">

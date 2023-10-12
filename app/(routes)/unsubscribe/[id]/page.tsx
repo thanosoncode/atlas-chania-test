@@ -17,7 +17,7 @@ const Unsubscribe = async ({ params: { id } }: { params: { id: string } }) => {
   });
 
   return (
-    <div className="my-40  flex items-center flex-col gap-12">
+    <div className="mt-40 mb-64 flex items-center flex-col gap-12">
       <h1>Θα μας λείψεις!</h1>
       <p>Απεγγράφηκες με επιτυχία από Newsletter του Atlas Chania!</p>
       <Link
