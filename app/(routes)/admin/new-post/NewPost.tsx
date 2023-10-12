@@ -82,6 +82,12 @@ const NewPost: React.FC<NewPostProps> = ({ session }) => {
         if (blogResponse.status === 201) {
           setIsLoading(false);
           toast.success("Post created!");
+          const blog = await blogResponse.json();
+          const newsLetterResponse = await fetch("/api/sendNewsletter", {
+            method: "POST",
+            body: JSON.stringify({ blog }),
+          });
+          console.log("newsLetterResponse", newsLetterResponse);
           router.refresh();
           router.push("/posts");
         } else {

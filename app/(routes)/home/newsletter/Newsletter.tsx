@@ -20,14 +20,17 @@ const Newsletter = () => {
       body: JSON.stringify({ email }),
     });
 
-    if (!response.ok) {
-      toast.error("Something went wrong. Try again later");
+    if (response.status === 409) {
+      toast.error("Αυτό το email υπάρχει ήδη στο newsletter");
       return;
     }
 
-    setIsConfirmEmailSent(true);
-
-    console.log("response", response);
+    if (response.status === 201) {
+      setIsConfirmEmailSent(true);
+      return;
+    } else {
+      toast.error("Κάτι πήγε στραβά, δοκιμάστε αργότερα...");
+    }
   };
 
   <div>

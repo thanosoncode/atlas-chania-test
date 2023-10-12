@@ -30,7 +30,7 @@ const Posts = async () => {
         </div>
       </div>
       <div className="bg-neutral-900 pt-12 sm:pt-48  sm:pb-12  pb-20">
-        <div className="px-4">
+        <div className="xl:w-[1200px] w-full px-4 mx-auto">
           <div className="flex gap-[24px] flex-wrap w-full justify-between">
             {sortedPosts.slice(0, 4).map((post) => (
               <MotionItemWrapper

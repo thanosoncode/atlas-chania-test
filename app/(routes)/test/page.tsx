@@ -35,8 +35,8 @@ const Newsletter = () => {
       <div className="flex flex-col items-center gap-2 py-12">
         <h1 className="font-semibold">Join our Newsletter</h1>
         <p className="w-1/2 text-center">
-          Εγγραφείτε στο newsletter μας για να λαμβάνετε τα τελευταία μας άρθρα
-          και προσφορές. No spam
+          Εγγραφείτε στο newsletter μας για να λαμβάνετε τα τελευταία μας άρθρα,
+          νέα και προσφορές. No spam.
         </p>
         <form onSubmit={handleSubmit} className="flex gap-2 mt-4">
           <input
@@ -54,11 +54,12 @@ const Newsletter = () => {
           </button>
         </form>
         {isConfirmEmailSent && (
-          <div>
-            <h1 className="font-semibold">Στάλθηκε email επιβεβαίωσης!</h1>
+          <div className="flex flex-col items-center gap-2 py-4">
+            <h1 className="font-semibold text-xl">
+              Στάλθηκε email επιβεβαίωσης!
+            </h1>
             <p className="w-1/2 text-center">
-              Πηγαίνετε στο email και κάντε click στο link που σας στείλαμε για
-              επιβεβαίωση
+              Πηγαίνετε στο email σας και κάντε click στο link που σας στείλαμε!
             </p>
           </div>
         )}

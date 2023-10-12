@@ -11,14 +11,21 @@ export async function POST(req: Request) {
   const { email } = (await req.json()) as {
     email: string;
   };
-
   if (!isValidEmail(email)) {
     return NextResponse.json({ message: "Invalid email" }, { status: 400 });
   }
-
   try {
+    const exist = await prisma.subscriber.findFirst({
+      where: { email },
+    });
+    if (exist) {
+      return NextResponse.json(
+        { message: "User already exists in newsletter" },
+        { status: 409 }
+      );
+    }
     const uuid = uuidv4();
-    const emailToVerify = await prisma.emailToVerify.create({
+    await prisma.emailToVerify.create({
       data: {
         email,
         uuid,
@@ -34,10 +41,9 @@ export async function POST(req: Request) {
         confirmUrl,
       }) as React.ReactElement,
     });
-    console.log("data", data);
-    console.log("emailToVerify", emailToVerify);
-    return NextResponse.json(data);
+
+    return NextResponse.json({ data }, { status: 201 });
   } catch (error) {
-    return NextResponse.json({ error });
+    return NextResponse.json({ error }, { status: 400 });
   }
 }
