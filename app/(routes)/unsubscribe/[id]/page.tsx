@@ -15,7 +15,7 @@ const Unsubscribe = async ({ params: { id } }: { params: { id: string } }) => {
   return (
     <div className="my-40  flex items-center flex-col gap-12">
       <h1>Θα μας λείψεις!</h1>
-      <p>Απγγράφηκες με επιτυχία από Newsletter του Atlas Chania!</p>
+      <p>Απεγγράφηκες με επιτυχία από Newsletter του Atlas Chania!</p>
       <Link
         href="/"
         className="border border-black p-3 hover:bg-black hover:text-white duration-200"
