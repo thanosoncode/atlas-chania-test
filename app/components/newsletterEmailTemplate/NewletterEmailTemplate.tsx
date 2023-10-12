@@ -18,7 +18,7 @@ const NewsletterEmailTemplate: React.FC<
       margin: "0 auto",
     }}
   >
-    <h1 style={{ fontSize: "22px", fontWeight: "normal" }}>
+    <h1 style={{ fontSize: "22px", fontWeight: "normal", textAlign: "center" }}>
       Atlas Chania newsletter!
     </h1>
     <div>
@@ -27,7 +27,7 @@ const NewsletterEmailTemplate: React.FC<
       </p>
       <a
         href={`https://www.atlaschania.gr/posts/${blog.id}`}
-        style={{ display: "block", textAlign: "center" }}
+        style={{ display: "block", textAlign: "center", marginBottom: "24px" }}
       >
         {`https://www.atlaschania.gr/posts/${blog.id}`}
       </a>
@@ -35,7 +35,13 @@ const NewsletterEmailTemplate: React.FC<
     <img
       src={blog.image}
       alt={blog.title}
-      style={{ width: "340px", height: "280px", display: "block" }}
+      style={{
+        width: "340px",
+        height: "280px",
+        display: "block",
+        objectFit: "contain",
+        margin: "0 auto",
+      }}
     />
     <div style={{ fontSize: "12px", marginTop: "100px", textAlign: "center" }}>
       If you dont want to receive these emails you can{" "}
