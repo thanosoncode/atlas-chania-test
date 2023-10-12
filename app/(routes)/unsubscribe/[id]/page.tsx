@@ -12,6 +12,10 @@ const Unsubscribe = async ({ params: { id } }: { params: { id: string } }) => {
     redirect("/");
   }
 
+  await prisma.emailToVerify.delete({
+    where: { email: subscriber.email },
+  });
+
   return (
     <div className="my-40  flex items-center flex-col gap-12">
       <h1>Θα μας λείψεις!</h1>
