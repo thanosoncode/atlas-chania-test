@@ -27,8 +27,6 @@ export async function POST(req: Request) {
 
     const emailPromises: Promise<CreateEmailResponse>[] = [];
 
-    console.log("subscribers", subscribers);
-
     subscribers.forEach((sub) => {
       const emailPromise = resend.emails.send({
         from: "Info <info@atlaschania.gr>",
@@ -39,9 +37,7 @@ export async function POST(req: Request) {
 
       emailPromises.push(emailPromise);
     });
-
-    const newsLetters = await Promise.all(emailPromises);
-    console.log("newsLetters", newsLetters);
+    await Promise.all(emailPromises);
     return NextResponse.json({}, { status: 200 });
   } catch (error) {
     return NextResponse.json({ error });

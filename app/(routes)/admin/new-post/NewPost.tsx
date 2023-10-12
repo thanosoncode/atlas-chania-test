@@ -87,7 +87,6 @@ const NewPost: React.FC<NewPostProps> = ({ session }) => {
             method: "POST",
             body: JSON.stringify({ blog }),
           });
-          console.log("newsLetterResponse", newsLetterResponse);
           router.refresh();
           router.push("/posts");
         } else {

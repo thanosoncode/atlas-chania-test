@@ -26,8 +26,6 @@ const Newsletter = () => {
     }
 
     setIsConfirmEmailSent(true);
-
-    console.log("response", response);
   };
 
   return (
