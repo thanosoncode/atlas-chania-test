@@ -1,6 +1,5 @@
 import { prisma } from "@/prisma/prismaClient";
-import React, { useState } from "react";
-import toast from "react-hot-toast";
+import React from "react";
 import { redirect } from "next/navigation";
 import Link from "next/link";
 
@@ -10,6 +9,16 @@ const Confirm = async ({ params: { id } }: { params: { id: string } }) => {
   });
 
   if (!validEmail) {
+    redirect("/");
+  }
+
+  const existingSubscriber = await prisma.subscriber.findUnique({
+    where: {
+      email: validEmail.email,
+    },
+  });
+
+  if (existingSubscriber) {
     redirect("/");
   }
 
