@@ -80,20 +80,22 @@ const NewPost: React.FC<NewPostProps> = ({ session }) => {
         });
 
         if (blogResponse.status === 201) {
-          setIsLoading(false);
           toast.success("Post created!");
+          setMessage("Sending newsletter emails...");
           const blog = await blogResponse.json();
-          const newsLetterResponse = await fetch("/api/sendNewsletter", {
+          await fetch("/api/sendNewsletter", {
             method: "POST",
             body: JSON.stringify({ blog }),
           });
+          setIsLoading(false);
+          toast.success("Newsletter sent!");
+          setIsLoading(false);
+          setMessage("");
           router.refresh();
           router.push("/posts");
         } else {
           throw new Error("Something went wrong");
         }
-        setIsLoading(false);
-        setMessage("");
       } catch (error) {
         setIsLoading(false);
         setMessage("");
