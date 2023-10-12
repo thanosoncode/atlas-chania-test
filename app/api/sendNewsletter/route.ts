@@ -32,7 +32,10 @@ export async function POST(req: Request) {
         from: "Info <info@atlaschania.gr>",
         to: [sub.email],
         subject: "Atlas Chania Newsletter",
-        react: NewsletterEmailTemplate({ blog }) as React.ReactElement,
+        react: NewsletterEmailTemplate({
+          blog,
+          subId: sub.id,
+        }) as React.ReactElement,
       });
 
       emailPromises.push(emailPromise);

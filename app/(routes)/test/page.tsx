@@ -24,7 +24,6 @@ const Newsletter = () => {
       toast.error("Something went wrong. Try again later");
       return;
     }
-
     setIsConfirmEmailSent(true);
   };
 

@@ -6,20 +6,13 @@ interface NewsletterEmailTemplateProps {
     title: string;
     image: string;
   };
+  subId: string;
 }
 
 const NewsletterEmailTemplate: React.FC<
   Readonly<NewsletterEmailTemplateProps>
-> = ({ blog }) => (
-  <div
-    style={{
-      display: "flex",
-      flexDirection: "column",
-      gap: "12px",
-      justifyContent: "center",
-      alignItems: "center",
-    }}
-  >
+> = ({ blog, subId }) => (
+  <div>
     <h1 style={{ fontSize: "22px", fontWeight: "normal" }}>
       Atlas Chania newsletter!
     </h1>
@@ -37,6 +30,15 @@ const NewsletterEmailTemplate: React.FC<
       alt={blog.title}
       style={{ width: "340px", height: "280px", display: "block" }}
     />
+    <div style={{ fontSize: "12px" }}>
+      If you dont want to receive these emails you can{" "}
+      <a
+        href={`https://www.atlaschania.gr/unsubscribe/${subId}`}
+        style={{ display: "block" }}
+      >
+        unsubscribe
+      </a>
+    </div>
   </div>
 );
 
