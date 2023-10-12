@@ -11,7 +11,7 @@ const NotFound = () => {
         href="/"
         className="border px-3 py-2 border-black uppercase hover:text-white hover:bg-black duration-200"
       >
-        go back to safety
+        return home
       </Link>
     </div>
   );

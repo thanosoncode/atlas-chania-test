@@ -23,3 +23,15 @@ model Wod {
   wodPlainText String
   createdAt    DateTime @default(now())
 }
+
+model Subscriber {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  email     String   @unique
+  createdAt DateTime @default(now())
+}
+
+model EmailToVerify {
+  id    String @id @default(auto()) @map("_id") @db.ObjectId
+  email String @unique
+  uuid  String
+}

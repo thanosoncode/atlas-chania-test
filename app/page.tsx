@@ -6,6 +6,7 @@ import Posts from "./(routes)/home/posts/Posts";
 import FollowUsOnIstagram from "./(routes)/home/followUsOnInstagram/FollowUsOnIstagram";
 import Questions from "./(routes)/home/questions/Questions";
 import { MotionPageWrapper } from "./components/motionWrapper/MotionPageWrapper";
+import Newsletter from "./(routes)/home/newsletter/Newsletter";
 
 const HomePage = () => {
   return (

@@ -1,4 +1,4 @@
-import EmailTemplate from "../../components/emailTemplate/EmailTemplate";
+import ContactFormEmailTemplate from "../../components/contactFormEmailTemplate/ContactFormEmailTemplate";
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
@@ -22,7 +22,7 @@ export async function POST(req: Request) {
       from: "Info <info@atlaschania.gr>",
       to: ["thanosoncode@gmail.com", "giannisdagou@gmail.com"],
       subject: "New message",
-      react: EmailTemplate({ email, message }) as React.ReactElement,
+      react: ContactFormEmailTemplate({ email, message }) as React.ReactElement,
     });
 
     return NextResponse.json(data);

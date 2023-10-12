@@ -1,14 +1,13 @@
 import * as React from "react";
 
-interface EmailTemplateProps {
+interface ContactFormEmailTemplateProps {
   email: string;
   message: string;
 }
 
-const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
-  email,
-  message,
-}) => (
+const ContactFormEmailTemplate: React.FC<
+  Readonly<ContactFormEmailTemplateProps>
+> = ({ email, message }) => (
   <div>
     <p>
       <span className="font-bold">Νεο μήνυμα!</span>
@@ -21,4 +20,4 @@ const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
   </div>
 );
 
-export default EmailTemplate;
+export default ContactFormEmailTemplate;
