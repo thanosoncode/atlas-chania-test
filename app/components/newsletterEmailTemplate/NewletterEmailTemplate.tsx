@@ -12,15 +12,24 @@ interface NewsletterEmailTemplateProps {
 const NewsletterEmailTemplate: React.FC<
   Readonly<NewsletterEmailTemplateProps>
 > = ({ blog, subId }) => (
-  <div>
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+    }}
+  >
     <h1 style={{ fontSize: "22px", fontWeight: "normal" }}>
       Atlas Chania newsletter!
     </h1>
     <div>
-      <p style={{ fontWeight: "bold", fontSize: "20px" }}>{blog.title}</p>
+      <p style={{ fontWeight: "bold", fontSize: "20px", textAlign: "center" }}>
+        {blog.title}
+      </p>
       <a
         href={`https://www.atlaschania.gr/posts/${blog.id}`}
-        style={{ display: "block" }}
+        style={{ display: "block", textAlign: "center" }}
       >
         {`https://www.atlaschania.gr/posts/${blog.id}`}
       </a>
@@ -30,7 +39,7 @@ const NewsletterEmailTemplate: React.FC<
       alt={blog.title}
       style={{ width: "340px", height: "280px", display: "block" }}
     />
-    <div style={{ fontSize: "12px" }}>
+    <div style={{ fontSize: "12px", marginTop: "100px", textAlign: "center" }}>
       If you dont want to receive these emails you can{" "}
       <a
         href={`https://www.atlaschania.gr/unsubscribe/${subId}`}

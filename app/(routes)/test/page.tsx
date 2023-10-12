@@ -47,10 +47,10 @@ const Newsletter = () => {
   };
 
   return (
-    <div className="mt-40">
+    <div className="mt-40 px-4">
       <div className="flex flex-col items-center gap-2 py-12">
-        <h1 className="font-semibold">Join our Newsletter</h1>
-        <p className="w-1/2 text-center">
+        <h1 className="font-semibold text-center">Join our Newsletter</h1>
+        <p className="md:w-1/2 text-center">
           Εγγραφείτε στο newsletter μας για να λαμβάνετε τα τελευταία μας άρθρα,
           νέα και προσφορές. No spam.
         </p>
