@@ -28,7 +28,8 @@ Crossfit Weightlifting Powerlifting gym in Chania
    React-quill
  </li>
  </ul>
-### Admin
+ 
+# Atlas Chania Website
 Ability to reate <strong>Newsletter</strong>, CRUD <strong>articles</strong> and <strong>workouts of the day</strong> 
 
 [www.atlaschania.gr](https://www.atlaschania.gr)
