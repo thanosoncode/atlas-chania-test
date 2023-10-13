@@ -28,7 +28,7 @@ Crossfit Weightlifting Powerlifting gym in Chania
    React-quill
  </li>
  </ul>
-
-Create <strong>Newsletter</strong>, CRUD <strong>articles</strong> and <strong>workouts of the day</strong> based on permissions
+### Admin
+Ability to reate <strong>Newsletter</strong>, CRUD <strong>articles</strong> and <strong>workouts of the day</strong> 
 
 [www.atlaschania.gr](https://www.atlaschania.gr)
