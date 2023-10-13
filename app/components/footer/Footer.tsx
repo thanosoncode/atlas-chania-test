@@ -21,16 +21,15 @@ const Footer = async () => {
     <footer className="bg-neutral-900">
       <div className="w-full px-4 xl:w-[1200px]  pt-6 mx-auto ">
         <div className=" border-b  border-neutral-300 pb-6">
-          <div className="flex sm:gap-0 gap-4  items-start justify-between  sm:flex-row flex-col">
-            <Link
-              href="/"
-              className="flex gap-2 md:gap-6 justify-center items-center hover:scale-105 duration-300 text-neutral-300 whitespace-nowrap"
-            >
+          <div className="flex gap-4 items-center">
+            <Link href="/" className="">
               <Image src={logo2} alt="logo" width={40} height={40} />
-              <h4 className="text-xl">Atlas Chania</h4>
             </Link>
-            <div className=" text-neutral-300">
-              We teach you how to lift the world.
+            <div className="flex justify-between items-start sm:items-center gap-0 sm:gap-4 w-full flex-col sm:flex-row ">
+              <h4 className="text-xl text-neutral-300">Atlas Chania</h4>
+              <div className=" text-neutral-300">
+                We teach you how to lift the world.
+              </div>
             </div>
           </div>
           <div className="flex w-full mt-6 flex-wrap justify-between gap-4 gap-y-2">
