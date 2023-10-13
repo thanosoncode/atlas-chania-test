@@ -32,4 +32,4 @@ Crossfit Weightlifting Powerlifting gym in Chania
 <h2>Admin</h2>
 Ability to reate <strong>Newsletter</strong>, CRUD <strong>articles</strong> and <strong>workouts of the day</strong> 
 
-[www.atlaschania.gr](https://www.atlaschania.gr)
+<strong>live<strong/> [www.atlaschania.gr](https://www.atlaschania.gr)
